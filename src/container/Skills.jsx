@@ -1,4 +1,4 @@
-export default function Skills(){
+export default function Skills({ setActiveSection }){
     return(
         <section id="Skills">
             

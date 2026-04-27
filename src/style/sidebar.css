@@ -4,6 +4,10 @@
     min-height: 80vh;
 }
 
+.section-line{
+    color: red ;
+}
+
 @media (max-width: 576px){
     .sidebar-container{
         max-width: 100%;

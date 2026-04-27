@@ -1,4 +1,4 @@
-export default function Certification(){
+export default function Certification({ setActiveSection }){
     return(
         <section id="Certification">
             

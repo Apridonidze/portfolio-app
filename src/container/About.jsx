@@ -1,6 +1,20 @@
-export default function About(){
+import { useEffect, useRef } from "react";
+
+export default function About({ setActiveSection }){
+
+    const sectionRef = useRef(null) 
+
+    useEffect(() => {
+
+        const observer = new IntersectionObserver(([entry]) => {entry.isIntersecting ? setActiveSection("About") : null} , { threshold : 0.5})
+        if(sectionRef.current) observer.observe(sectionRef.current)
+        
+        return () => observer.disconnect()
+
+    },[setActiveSection])
+
     return(
-        <section id="About">
+        <section id="About" ref={sectionRef}>
             <span className="section-id">01 / ABOUT</span>
             <h1 className="fw-bold">About Me</h1>
             <div className="section-body">

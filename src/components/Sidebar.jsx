@@ -1,6 +1,7 @@
 import '../style/sidebar.css'
 
-export default function Sidebar(){
+export default function Sidebar({ activeSection }){
+    console.log(activeSection)
     return(
         <div className="sidebar-container">
 
@@ -13,11 +14,11 @@ export default function Sidebar(){
 
             <div className="sidebar-main">
                 <ul>
-                    <li><span className='section-line'></span><span>About</span></li>
-                    <li><span className='section-line'></span><span>Skills</span></li>
-                    <li><span className='section-line'></span><span>Experience</span></li>
-                    <li><span className='section-line'></span><span>Projects</span></li>
-                    <li><span className='section-line'></span><span>Certification</span></li>
+                    <li className={`section-line ${activeSection === "About" ? 'active' : ''}`}><span className='section-line'></span><span>About</span></li>
+                    <li><span className={`section-line ${activeSection === "Skills" ? 'active' : ''}`}></span><span>Skills</span></li>
+                    <li><span className={`section-line ${activeSection === "Experience" ? 'active' : ''}`}></span><span>Experience</span></li>
+                    <li><span className={`section-line ${activeSection === "Projects" ? 'active' : ''}`}></span><span>Projects</span></li>
+                    <li><span className={`section-line ${activeSection === "Certification" ? 'active' : ''}`}></span><span>Certification</span></li>
                 </ul>
             </div>
 

@@ -1,4 +1,4 @@
-export default function Projects(){
+export default function Projects({ setActiveSection }){
     return(
         <section id="Projects">
             
