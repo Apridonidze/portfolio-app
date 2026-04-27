@@ -14,8 +14,8 @@ export default function Main(){
 
     return(
         <div className="main-container container-fluid row row-cols-sm-2 row-cols-1">
-            <div className="main-start"><Sidebar activeSection={activeSection}/></div>
-            <div className="main-end mx-auto">
+            <div className="main-start mt-5"><Sidebar activeSection={activeSection}/></div>
+            <div className="main-end mx-auto mt-5">
                 <About setActiveSection={setActiveSection}/>
                 <Skills setActiveSection={setActiveSection}/>
                 <Experience setActiveSection={setActiveSection}/>

@@ -8,7 +8,7 @@
     color: red ;
 }
 
-@media (max-width: 576px){
+@media (max-width: 856px){
     .sidebar-container{
         max-width: 100%;
         justify-content: center;

@@ -1,13 +1,12 @@
 .main-container{
     max-width: 2000px;
     margin: auto;
+    gap: 1rem;
 }
 
 .main-start{
     height: 100vh;
-    display: flex;
     max-width: 400px;
-    align-items: center;
 }
 
 .main-end{
@@ -15,10 +14,12 @@
 }
 
 
-@media (max-width: 576px){
+@media (max-width: 856px){
     .main-start, .main-end{
         margin: auto !important;
         max-width: 100%;
+        width: 100%;
+        height: auto;
     }
 
     .main-container{

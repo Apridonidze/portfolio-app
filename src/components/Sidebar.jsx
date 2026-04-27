@@ -5,8 +5,8 @@ export default function Sidebar({ activeSection }){
         <div className="sidebar-container">
 
             <div className="sidebar-top">
-                <h1>Giorgi Aphridonidze</h1>
-                <h3>Fullstack Web Developer</h3>
+                <h1 className='fw-bold'>Giorgi Aphridonidze</h1>
+                <h4>Fullstack Web Developer</h4>
                 <h6>I build real-world web applications that are fast, functional, and easy to use.</h6>
                 <h6><i class="fa-solid fa-location-dot"></i> Tbilis, Georgia</h6>
             </div>
