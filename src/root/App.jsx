@@ -1,4 +1,4 @@
-import Main from "../routes/Main";
+import Main from "../container/Main";
 
 export default function App(){
     return(<Main />);
