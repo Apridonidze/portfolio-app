@@ -1,0 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: #09121f;
+    color: #9aa3b5 ;
+}
+
+h1{
+    font-size: 48px;
+    color: #d8dde8;
+}
+
+h6{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4rem;
+}

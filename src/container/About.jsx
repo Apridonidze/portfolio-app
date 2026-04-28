@@ -15,19 +15,20 @@ export default function About({ setActiveSection }){
 
     return(
         <section id="About" ref={sectionRef}>
-            <span className="section-id">01 / ABOUT</span>
-            <h1 className="fw-bold">About Me</h1>
+
+            <span className="section-id small">01 / ABOUT</span>
+            <h1 className="section-title fw-bold mt-2">About Me</h1>
+
             <div className="section-body">
-                <h6>I’m a full-stack developer focused on building real-world web applications that solve practical problems and scale over time. I work across the entire stack using React, Node.js, Express, and MySQL, delivering products that are fast, stable, and ready for production.</h6>
-                
-                <h6>My experience comes from building and shipping freelance projects, where I’ve handled everything from planning and development to deployment. This taught me how to understand requirements quickly, communicate clearly, and deliver features that work under real constraints.</h6>
+                <h6 className="my-3">I’m a <b>full-stack developer</b> focused on building real-world web applications that solve practical problems and scale over time. I work across the entire stack using <b className="lightHighlight">React, Node.js, Express, and MySQL,</b> delivering production-ready products.</h6>
 
-                <h6>I approach development with a product mindset — not just writing code, but building systems that are maintainable, efficient, and designed to grow. Performance, clean architecture, and usability are always priorities.</h6>
+                <h6 className="my-3">My experience comes from <b>freelance projects</b> where I handled everything from planning to deployment. This helped me build strong communication skills and the ability to deliver features under real constraints with a product-focused mindset.</h6>
 
-                <h6>I can take a project from idea or design to a complete, structured application, improve existing systems, or solve specific issues like slow performance and poor scalability.</h6>
+                <h6 className="my-3">I focus on clean architecture & scalability, performance, and usability, building systems that are maintainable and scalable. I can take an idea or design and turn it into a complete application or improve existing systems.</h6>
 
-                <h6>Currently, I’m looking for opportunities to contribute to real products, collaborate with a team, and continue improving as a developer through meaningful work.</h6>
+                <h6 className="my-3">Currently, <b className="lightHighlight">I’m looking for opportunities</b> to contribute to real products, collaborate with teams, and continue growing as a developer through meaningful work.</h6>
             </div>
+
         </section>
     );
 };

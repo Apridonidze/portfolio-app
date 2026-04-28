@@ -1,0 +1,19 @@
+.section-id{
+    color: #5eead4;
+    letter-spacing: 3px;
+    font-size: 14px;
+}
+.section-title{
+
+}
+.section-body{
+    font-size: 16px;
+}
+
+.section-body b{
+    color: #5eead4;
+}
+
+.section-body .lightHighlight{
+    color: #d8dde8;
+}
