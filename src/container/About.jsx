@@ -17,7 +17,7 @@ export default function About({ setActiveSection }){
         <section id="About" ref={sectionRef}>
 
             <span className="section-id small">01 / ABOUT</span>
-            <h1 className="section-title fw-bold mt-2">About Me</h1>
+            <h1 className="section-title ">About Me</h1>
 
             <div className="section-body">
                 <h6 className="my-3">I’m a <b>full-stack developer</b> focused on building real-world web applications that solve practical problems and scale over time. I work across the entire stack using <b className="lightHighlight">React, Node.js, Express, and MySQL,</b> delivering production-ready products.</h6>

@@ -11,9 +11,10 @@
 }
 
 .main-end{
-    min-height: 200vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
 }
-
 
 @media (max-width: 856px){
     .main-start, .main-end{

@@ -4,10 +4,12 @@
     font-size: 14px;
 }
 .section-title{
-
+    font-weight: bold;
+    font-size: 54px;
+    margin-top: 1rem;
 }
-.section-body{
-    font-size: 16px;
+.section-body h6{
+    font-size: 18px;
 }
 
 .section-body b{
