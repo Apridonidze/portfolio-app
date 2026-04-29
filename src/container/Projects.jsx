@@ -41,7 +41,7 @@ export default function Projects({ setActiveSection }){
             title: "Driver Tickets - Georgian Driving Test App",
             desc: "A full-stack educational platform that helps users prepare for the Georgian theoretical driving exam with complete ticket access, audio-assisted explanations, and personalized practice features.",
             usedTech: [
-            "React (Vite)",
+            "React",
             "Node.js",
             "Express.js",
             "MySQL",
@@ -76,7 +76,7 @@ export default function Projects({ setActiveSection }){
             title: "QR Code Generator & Scanner",
             desc: "A modern web application that allows users to generate and scan QR codes with real-time preview, download functionality, and seamless camera integration.",
             usedTech: [
-                "React (Vite)",
+                "React",
                 "JavaScript",
                 "Bootstrap",
                 "CSS"
@@ -91,7 +91,7 @@ export default function Projects({ setActiveSection }){
             <span className="section-id small">04 / Projects</span>
             <h1 className="section-title ">Things I've built</h1>
             
-            <div className="section-body d-flex flex-column gap-2 my-2">
+            <div className="section-body row gap-3 my-3">
                 {projects.map((project, projectId) => <Project project={project} projectId={projectId}/>)}
             </div>
         </section>

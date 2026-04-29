@@ -73,7 +73,6 @@
 .experience-container:hover{
     box-shadow: 0px 0px 8px -1px #5eead4;
     scale: 1.01;
-    
 }
 
 .smallText{
@@ -113,9 +112,8 @@
 }
 
 .usedTechnology{
-    color: #5eead4;
+    color: #56d6c3;
     background-color: rgba(94, 234, 212, 0.2);
-    border: 1px solid #5eead4;
     border-radius: 15px;
 }
 
@@ -140,9 +138,63 @@
     font-size: 22px;
 }
 
-.project-container{
+.project-container {
     display: flex;
-    align-items: center;
-    background-color: #1e293a;
-    border-radius: 10px;
+    flex-direction: column;
+    gap: 1.5rem;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    background-color: #121c2a;
+    transition: all 0.2s ease;
+}
+
+.project-start {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease;
+
+}
+
+.project-start img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.project-container:hover .project-start img{
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.project-container:hover{
+    box-shadow: 0px 0px 8px -1px #5eead4;
+    scale: 1.01;
+}
+
+.project-end h4{
+    color: #d8dde8;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.project-end h6{
+    font-size: 16px;
+}
+
+.githubBtn{
+    margin-top: 1.5rem !important;
+    color: #d8dde8;
+    border: 1px solid #1e293a;
+    font-size: 18px;
+    height: 50px;
+    transition: all 0.2s ease;
+}
+
+.githubBtn:hover{
+    scale: 1.02;
+    border: 1px solid #1e293a;
 }

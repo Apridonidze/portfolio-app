@@ -7,8 +7,8 @@ export default function Project({ project, projectId }){
             <div className="project-end">
                 <h4>{project.title}</h4>
                 <h6>{project.desc}</h6>
-                <div className="row">{project.usedTech.map(tech => <span className="usedTechnology col-auto">{tech}</span> )}</div>
-                <button><i class="fa-brands fa-github"></i> View on GitHub</button>
+                <div className="row gap-2 my-2 px-2">{project.usedTech.map(tech => <span className="usedTechnology col-auto">{tech}</span> )}</div>
+                <button className="githubBtn btn mt-2 w-100"><i class="fa-brands fa-github"></i> View on GitHub</button>
             </div>
         </div>
     )
