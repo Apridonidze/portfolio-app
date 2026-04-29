@@ -92,6 +92,23 @@
     width: 100%;
 }
 
+.socials{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.7rem;
+    font-size: 18px;
+}
+
+.socials i{
+    transition: all 0.1s ease;
+    color: #9aa3b5;
+}
+
+.socials i:hover{
+    color: #5eead4;
+}
+
 @media (max-width: 856px){
     .sidebar-container{
         max-width: 100%;

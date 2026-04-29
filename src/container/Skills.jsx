@@ -7,11 +7,9 @@ export default function Skills({ setActiveSection }){
 
     useEffect(() => {
 
-        const observer = new IntersectionObserver(([entry]) => {entry.isIntersecting ? setActiveSection("Skills") : null} , { threshold : 0})
+        const observer = new IntersectionObserver(([entry]) => {entry.isIntersecting ? setActiveSection("Skills") : null} , { threshold : 0.5})
         if(sectionRef.current) observer.observe(sectionRef.current)
         
-        return () => observer.disconnect()
-
     },[setActiveSection])
 
     const skills = [

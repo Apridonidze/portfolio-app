@@ -13,7 +13,7 @@ import '../style/section.css'
 export default function Main(){
     
     const [activeSection , setActiveSection] = useState('')
-
+    
     return(
         <div className="main-container  row row-cols-sm-2 row-cols-1">
             <div className="main-start mt-5"><Sidebar activeSection={activeSection}/></div>

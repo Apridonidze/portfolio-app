@@ -1,5 +1,17 @@
+import { useEffect, useRef } from "react";
 import Experience from "../components/Experience";
+
 export default function Experiences({ setActiveSection }){
+
+    const sectionRef = useRef(null) 
+    
+    useEffect(() => {
+
+        const observer = new IntersectionObserver(([entry]) => {entry.isIntersecting ? setActiveSection("Experience") : null} , { threshold : 0.3})
+        if(sectionRef.current) observer.observe(sectionRef.current)
+        
+
+    },[setActiveSection])
 
     const experiences = [
         {
@@ -63,7 +75,7 @@ export default function Experiences({ setActiveSection }){
     ];
 
     return(
-        <section id="Experience">
+        <section id="Experience" ref={sectionRef}>
 
             <span className="section-id small">03 / Experience</span>
             <h1 className="section-title ">Where I've Worked</h1>

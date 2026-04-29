@@ -1,12 +1,23 @@
+import Project from '../components/Project'
+
 import ProjectScreenshot1 from '../assets/project-screenshots/Screenshot 2025-11-19 120022.png'
 import ProjectScreenshot2 from '../assets/project-screenshots/image_original.jpeg'
 import ProjectScreenshot3 from '../assets/project-screenshots/Screenshot 2025-11-26 174331.png'
 import ProjectScreenshot4 from '../assets/project-screenshots/img8.png'
 import ProjectScreenshot5 from '../assets/project-screenshots/Screenshot 2025-12-22 113631.png'
-import Project from '../components/Project'
 
+import { useRef,useEffect } from 'react'
 
 export default function Projects({ setActiveSection }){
+
+    const sectionRef = useRef(null) 
+    
+    useEffect(() => {
+
+        const observer = new IntersectionObserver(([entry]) => {entry.isIntersecting ? setActiveSection("Projects") : null} , { threshold : 0.1})
+        if(sectionRef.current) observer.observe(sectionRef.current)
+        
+    },[setActiveSection])
     
     const projects = [
         {
@@ -87,11 +98,11 @@ export default function Projects({ setActiveSection }){
     ];
 
     return(
-        <section id="Projects">
+        <section id="Projects" ref={sectionRef}>
             <span className="section-id small">04 / Projects</span>
             <h1 className="section-title ">Things I've built</h1>
             
-            <div className="section-body row gap-3 my-3">
+            <div className="section-body row gap-5 my-3">
                 {projects.map((project, projectId) => <Project project={project} projectId={projectId}/>)}
             </div>
         </section>
