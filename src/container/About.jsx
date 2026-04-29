@@ -6,7 +6,7 @@ export default function About({ setActiveSection }){
 
     useEffect(() => {
 
-        const observer = new IntersectionObserver(([entry]) => {entry.isIntersecting ? setActiveSection("About") : null} , { threshold : 0.5})
+        const observer = new IntersectionObserver(([entry]) => {entry.isIntersecting ? setActiveSection("About") : null} , { threshold : 0})
         if(sectionRef.current) observer.observe(sectionRef.current)
         
         return () => observer.disconnect()

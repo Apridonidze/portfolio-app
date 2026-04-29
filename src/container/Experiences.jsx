@@ -69,9 +69,9 @@ export default function Experiences({ setActiveSection }){
             <h1 className="section-title ">Where I've Worked</h1>
 
             <div className="section-body">
-                <div className="row">{experiences.map(experience => <Experience experience={experience}/>)}</div>
+                <div className="row">{experiences.map((experience , experienceId) => <Experience experience={experience} experienceId={experienceId}/>)}</div>
             </div>
-            
+
         </section>
     );
 };
