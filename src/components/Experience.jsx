@@ -5,7 +5,7 @@ export default function Experience({ experience, experienceId }){
     const [ toggleResps, setToggleResps ] = useState(false); 
 
     return(
-        <div className="experience-container" key={experienceId}>
+        <div className="experience-container py-3" key={experienceId}>
 
             <div className="experience-top">
                 <h4><span className="position">{experience.position}</span> - <span className="companyName">{experience.company_name}</span></h4>
@@ -20,8 +20,8 @@ export default function Experience({ experience, experienceId }){
             <div className="experience-footer">
 
                 <span id="responsibilities" onClick={() => setToggleResps(!toggleResps)}>
-                    {toggleResps ? 'HIDE' : 'KEY RESPONSIBILITIES'} <span className={`arrow ${toggleResps ? 'active' : ''}`}>
-                    <i class="fa-solid fa-angle-down"></i></span>
+                    {toggleResps ? 'HIDE' : 'KEY RESPONSIBILITIES'} 
+                    <span style={{transform : toggleResps ? 'rotate(180deg)' : 'rotate(0deg)', display: 'inline-block', transition: 'transform 0.2s ease'}}><i className="fa-solid fa-angle-down"></i></span>
                 </span>
 
                 <div className={toggleResps ? 'collapsed' : 'collapse'} >

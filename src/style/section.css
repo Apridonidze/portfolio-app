@@ -103,6 +103,9 @@
     font-size: 14px;
     color: #b2bdc9;
     border: 1px solid rgb(127, 137, 148);
+    display: flex;
+    width: fit-content;
+    gap: 5px;
 }
 #responsibilities:hover{
     color: #5eead4;
@@ -135,4 +138,11 @@
 .experience-footer ul li::marker{
     color: #5eead4;
     font-size: 22px;
+}
+
+.project-container{
+    display: flex;
+    align-items: center;
+    background-color: #1e293a;
+    border-radius: 10px;
 }
