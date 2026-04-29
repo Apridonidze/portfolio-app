@@ -7,51 +7,8 @@ import Project from '../components/Project'
 
 
 export default function Projects({ setActiveSection }){
-
+    
     const projects = [
-        {
-            title: "Job Board Application",
-            desc: "A full-stack job platform where employees can discover and apply for jobs while recruiters can post opportunities and manage applicants. Built with a strong focus on security, scalability, and real-world workflows.",
-            usedTech: [
-                "React",
-                "Bootstrap",
-                "CSS",
-                'Node.js',
-                "Express.js",
-                "MySQL",
-                "Git & GitHub"
-            ],
-            githubUrl: "https://github.com/Apridonidze/jobs-app",
-            image: ProjectScreenshot1
-        },
-        {
-            title: "Typing Practice App",
-            desc: "An interactive typing application designed to improve typing speed and accuracy with real-time feedback, customizable UI, and persistent user preferences.",
-            usedTech: [
-                "React",
-                "Node.js",
-                "Express.js",
-                "Bootstrap",
-                "CSS"
-            ],
-            githubUrl: "https://github.com/Apridonidze/typing-app",
-            image: ProjectScreenshot2
-        },
-        {
-            title: "Driver Tickets - Georgian Driving Test App",
-            desc: "A full-stack educational platform that helps users prepare for the Georgian theoretical driving exam with complete ticket access, audio-assisted explanations, and personalized practice features.",
-            usedTech: [
-            "React",
-            "Node.js",
-            "Express.js",
-            "MySQL",
-            "Bootstrap",
-            "CSS",
-            "Git"
-            ],
-            githubUrl: "https://github.com/Apridonidze/driver-tickets",
-            image: ProjectScreenshot3
-        },
         {
             title: "E-Commerce Platform",
             desc: "A full-stack e-commerce application delivering a complete online shopping experience with secure payments, real-time communication, and a feature-rich admin dashboard for managing products, users, and analytics.",
@@ -71,6 +28,49 @@ export default function Projects({ setActiveSection }){
             ],
             githubUrl: "https://github.com/Apridonidze/e-commerce-app",
             image: ProjectScreenshot4
+        },
+        {
+            title: "Job Board Application",
+            desc: "A full-stack job platform where employees can discover and apply for jobs while recruiters can post opportunities and manage applicants. Built with a strong focus on security, scalability, and real-world workflows.",
+            usedTech: [
+                "React",
+                "Bootstrap",
+                "CSS",
+                'Node.js',
+                "Express.js",
+                "MySQL",
+                "Git & GitHub"
+            ],
+            githubUrl: "https://github.com/Apridonidze/jobs-app",
+            image: ProjectScreenshot1
+        },
+        {
+            title: "Driver Tickets - Georgian Driving Test App",
+            desc: "A full-stack educational platform that helps users prepare for the Georgian theoretical driving exam with complete ticket access, audio-assisted explanations, and personalized practice features.",
+            usedTech: [
+            "React",
+            "Node.js",
+            "Express.js",
+            "MySQL",
+            "Bootstrap",
+            "CSS",
+            "Git"
+            ],
+            githubUrl: "https://github.com/Apridonidze/driver-tickets",
+            image: ProjectScreenshot3
+        },
+        {
+            title: "Typing Practice App",
+            desc: "An interactive typing application designed to improve typing speed and accuracy with real-time feedback, customizable UI, and persistent user preferences.",
+            usedTech: [
+                "React",
+                "Node.js",
+                "Express.js",
+                "Bootstrap",
+                "CSS"
+            ],
+            githubUrl: "https://github.com/Apridonidze/typing-app",
+            image: ProjectScreenshot2
         },
         {
             title: "QR Code Generator & Scanner",

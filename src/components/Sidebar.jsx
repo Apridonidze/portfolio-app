@@ -13,11 +13,11 @@ export default function Sidebar({ activeSection }){
 
             <div className="sidebar-main">
                 <ul className='sectionContainer'>
-                    <li className={`section ${activeSection === "About" ? 'active' : ''}`}><span className='section-line'></span><span>About</span></li>
-                    <li className={`section ${activeSection === "Skills" ? 'active' : ''}`}><span className='section-line'></span><span>Skills</span></li>
-                    <li className={`section ${activeSection === "Experience" ? 'active' : ''}`}><span className='section-line'></span><span>Experience</span></li>
-                    <li className={`section ${activeSection === "Projects" ? 'active' : ''}`}><span className='section-line'></span><span>Projects</span></li>
-                    <li className={`section ${activeSection === "Certification" ? 'active' : ''}`}><span className='section-line'></span><span>Certification</span></li>
+                    <li onClick={() => document.getElementById('About').scrollIntoView()} className={`section ${activeSection === "About" ? 'active' : ''}`}>About</li>
+                    <li onClick={() => document.getElementById('Skills').scrollIntoView()} className={`section ${activeSection === "Skills" ? 'active' : ''}`}>Skills</li>
+                    <li onClick={() => document.getElementById('Experience').scrollIntoView()} className={`section ${activeSection === "Experience" ? 'active' : ''}`}>Experience</li>
+                    <li onClick={() => document.getElementById('Projects').scrollIntoView()} className={`section ${activeSection === "Projects" ? 'active' : ''}`}>Projects</li>
+                    <li onClick={() => document.getElementById('Certification').scrollIntoView()} className={`section ${activeSection === "Certification" ? 'active' : ''}`}>Certification</li>
                 </ul>
             </div>
 

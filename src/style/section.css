@@ -198,3 +198,9 @@
     scale: 1.02;
     border: 1px solid #1e293a;
 }
+
+@media (max-width : 834px) {
+    .project-start img{
+        opacity: 1;
+    }
+}
