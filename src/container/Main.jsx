@@ -3,7 +3,7 @@ import Sidebar from "../components/Sidebar";
 
 import About from "./About";
 import Certification from "./Certification";
-import Experience from "./Experience";
+import Experiences from "./Experiences";
 import Projects from "./Projects";
 import Skills from "./Skills";
 
@@ -20,7 +20,7 @@ export default function Main(){
             <div className="main-end mx-auto mt-5">
                 <About setActiveSection={setActiveSection}/>
                 <Skills setActiveSection={setActiveSection}/>
-                <Experience setActiveSection={setActiveSection}/>
+                <Experiences setActiveSection={setActiveSection}/>
                 <Projects setActiveSection={setActiveSection}/>
                 <Certification setActiveSection={setActiveSection}/>
             </div>
