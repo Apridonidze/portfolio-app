@@ -37,7 +37,8 @@ export default function Skills({ setActiveSection }){
             'Webhooks',
             'JWT',
             'Zod',
-            'Rate Limiting'
+            'Rate Limiting',
+            '.env',
             ]
         },
         {
@@ -67,8 +68,10 @@ export default function Skills({ setActiveSection }){
             <span className="section-id small">02 / SKILLS</span>
             <h1 className="section-title ">Skills & Technologies</h1>
 
-            <div className="section-body">
-                {skills.map(skill => <Skill title={skill.title} skills={skill.skills}/>)}
+            <div className="section-body mt-1 ">
+                <div className="skills-container">
+                    {skills.map(skill => <Skill title={skill.title} skills={skill.skills}/>)}
+                </div>
             </div>
 
         </section>

@@ -19,3 +19,34 @@
 .section-body .lightHighlight{
     color: #d8dde8;
 }
+
+.skills-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:1.5rem;
+}
+
+.skill-container{
+    background-color: #121c2a;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.skill-container:hover{
+    box-shadow: 0px 0px 12px #5eead4;
+    scale: 1.03;
+}
+
+.skill-title{
+    font-size: 16px !important;
+    letter-spacing: 2px;
+    color: #5eead4;
+}
+
+.skill{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #1e293a;
+    color: #bdc8d4;
+}
