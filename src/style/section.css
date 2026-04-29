@@ -20,6 +20,8 @@
     color: #d8dde8;
 }
 
+/*  */
+
 .skills-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -49,4 +51,79 @@
     border-radius: 10px;
     background-color: #1e293a;
     color: #bdc8d4;
+}
+
+/*  */
+
+.experience-container{
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0rem;
+    background-color: #121c2a;
+    color: #bdc8d4;
+}
+
+.smallText{
+    font-size: 14px;
+}
+
+.position{
+    color: #d8dde8;
+}
+
+.companyName{
+    color: #5eead4;
+}
+
+.experience-main h4{
+    font-size: 20px;
+}
+
+.experience-main h6{
+    font-size: 15px;
+}
+
+#responsibilities{
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #b2bdc9;
+    border: 1px solid rgb(127, 137, 148);
+}
+#responsibilities:hover{
+    color: #5eead4;
+    border: 1px solid #5eead4;
+}
+
+.usedTechnology{
+    color: #5eead4;
+    background-color: rgba(94, 234, 212, 0.2);
+    border: 1px solid #5eead4;
+    border-radius: 15px;
+}
+
+.experience-footer ul{
+    margin-top: 1rem;
+    position: relative;
+    font-size: 14px;
+}
+
+
+.experience-footer ul::before{
+    content: '';
+    height: 87%;
+    border: 0.1px solid #5eead4;
+    position: absolute;
+    top: 1rem;
+    left: 0.99rem;
+}
+
+.experience-footer ul li::marker{
+    color: #5eead4;
+    font-size: 22px;
 }
