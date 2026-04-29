@@ -29,6 +29,7 @@
 }
 
 .skill-container{
+    border: 1px solid #121c2a;
     background-color: #121c2a;
     border-radius: 10px;
     transition: all 0.2s ease;
@@ -36,7 +37,7 @@
 }
 
 .skill-container:hover{
-    box-shadow: 0px 0px 12px #5eead4;
+    box-shadow: 0px 0px 8px -1px #5eead4;
     scale: 1.03;
 }
 
@@ -65,6 +66,14 @@
     margin: 1rem 0rem;
     background-color: #121c2a;
     color: #bdc8d4;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.experience-container:hover{
+    box-shadow: 0px 0px 8px -1px #5eead4;
+    scale: 1.01;
+    
 }
 
 .smallText{

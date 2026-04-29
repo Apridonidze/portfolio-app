@@ -4,7 +4,7 @@ export default function Experiences({ setActiveSection }){
     const experiences = [
         {
             date: "Jan 2026 - Jan 2026",
-            position: "Front End Web Developer",
+            position: "Frontend Web Developer",
             company_name: "Upwork",
             description:"Delivered high-quality, responsive websites by transforming client designs into robust front-end solutions. Collaborated closely with clients to capture requirements, refine details, and implement feedback promptly. Ensured optimal performance and seamless user experiences across all devices and browsers, with a focus on clean, maintainable code.",
             responsibilities: [
