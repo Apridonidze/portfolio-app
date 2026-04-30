@@ -35,6 +35,7 @@ export default function Skills({ setActiveSection }){
             'Webhooks',
             'JWT',
             'Zod',
+            'uuid',
             'Rate Limiting',
             '.env',
             ]
