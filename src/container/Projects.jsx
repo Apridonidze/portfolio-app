@@ -108,7 +108,7 @@ export default function Projects({ setActiveSection }){
                 {projects.map((project, projectId) => <Project project={project} projectId={projectId}/>)}
             </div>
 
-            <Activity />
+            <div className="section-body row gap-5 my-3"><Activity /></div>
 
         </section>
     );

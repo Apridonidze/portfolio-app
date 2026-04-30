@@ -22,11 +22,11 @@ export default function Commits({ commits }){
                 <a href="https://github.com/Apridonidze/portfolio-app/commits">View all commits <i className="fa-solid fa-angle-right"></i></a>
             </div>
             
-            <div className="commits-main row gap-2 p-1 mt-2">
+            <div className="commits-main row gap-2 p-1 mt-2 px-2">
                 {commits?.map((commit, commitId) => 
                     <div className="commit-container d-flex justify-content-between align-items-center" key={commitId} onClick={() => window.open(commit.url)}>
                         <div className="commit-start d-flex flex-column align-items-start ">
-                            <h6 className="m-0 " style={{maxWidth : '80%'}}>{commit.message.length > 60 ? commit.message.slice(0, 60) : `${commit.message}...`}</h6>
+                            <h6 className="m-0 " style={{maxWidth : '80%'}}>{commit.message.length > 60 ? `${commit.message.slice(0, 60)}...` : commit.message}</h6>
                             <span className="small mt-1">{commit.url.split('/')[3]}/{commit.url.split('/')[4]}</span>
                         </div>
 

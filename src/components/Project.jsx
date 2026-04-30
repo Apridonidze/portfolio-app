@@ -11,5 +11,5 @@ export default function Project({ project, projectId }){
                 <button onClick={() => window.open(project.githubUrl)} className="githubBtn btn mt-2 w-100"><i class="fa-brands fa-github"></i> View on GitHub</button>
             </div>
         </div>
-    )
-}
+    );
+};

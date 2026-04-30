@@ -146,6 +146,7 @@
     padding: 1.5rem;
     background-color: #121c2a;
     transition: all 0.2s ease;
+    width: 100%;
 }
 
 .project-start {
@@ -153,7 +154,6 @@
     overflow: hidden;
     border-radius: 0.5rem;
     transition: all 0.2s ease;
-
 }
 
 .project-start img {
@@ -216,21 +216,38 @@
     color: #d8dde8;
     font-weight: 500;
     font-size: 16px;
+    padding-left: 10px;
 }
 
 .activity-container a {
     transition: all 0.2s ease;
-    color: #d8dde8;
+    color: #bdc8d4;
     text-decoration: none;
 }
 
 .commit-start{
+    position: relative;
     width: 100%;
     max-width: 300px !important;
 }
 
+.commit-start h6::before{
+    content: '';
+    left: 0px;
+    top: 8px;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    position: absolute;
+    background-color: #5eead4;
+}
+
 .activity-container a:hover{
     color: #56d6c3;
+}
+
+.activity-container a{
+    color: #9da8b4 ;
 }
 
 .commits-main > :last-child{
@@ -253,9 +270,12 @@
     color: #9da8b4;
 }
 
-@media (max-width : 834px) {
+@media (max-width: 856px){
     .project-start img{
         opacity: 1;
+    }
+    #Projects{
+        width: 100%;
     }
 }
 

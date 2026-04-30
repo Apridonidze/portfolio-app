@@ -22,6 +22,7 @@
         max-width: 100%;
         width: 100%;
         height: auto;
+        align-items: start;
     }
 
     .main-container{
@@ -29,5 +30,19 @@
         margin: auto;
         gap: 3rem;
         width: 100% !important;
+    }
+
+    .sidebar-bottom{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+        width: 100%;
+        font-size: 18px;
+        gap: 0.5rem;
+    }
+
+    .sidebar-bottom i{
+        font-size: 22px;
     }
 }
