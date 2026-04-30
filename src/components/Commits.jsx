@@ -25,14 +25,13 @@ export default function Commits({ commits }){
             <div className="commits-main row gap-2 p-1 mt-2">
                 {commits?.map((commit, commitId) => 
                     <div className="commit-container d-flex justify-content-between align-items-center" key={commitId}>
-                        <div className="commit-start d-flex flex-column align-items-center">
-                            <h6 className="m-0">{commit.message}</h6>
+                        <div className="commit-start d-flex flex-column align-items-start ">
+                            <h6 className="m-0 " style={{maxWidth : '80%'}}>{commit.message.length > 60 ? commit.message.slice(0, 60) : `${commit.message}...`}</h6>
                             <span className="small mt-1">{commit.url.split('/')[3]}/{commit.url.split('/')[4]}</span>
                         </div>
 
                         <div className="commit-end d-flex gap-2">
                             <span className="small">{generateTime(commit.date)}</span> <br />
-                            <span className="usedTechnology px-2 text-center py-1 small">{commit.id}</span>
                             <a href={commit.url}><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                         </div>
                     </div>

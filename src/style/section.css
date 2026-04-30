@@ -224,6 +224,11 @@
     text-decoration: none;
 }
 
+.commit-start{
+    width: 100%;
+    max-width: 300px !important;
+}
+
 .activity-container a:hover{
     color: #56d6c3;
 }
@@ -244,5 +249,32 @@
 @media (max-width : 834px) {
     .project-start img{
         opacity: 1;
+    }
+}
+
+@media (max-width : 462px) {
+    .commits-header{
+        display: flex;
+        text-align: start !important;
+        justify-content: start !important;
+        align-items: start !important;
+        flex-direction: column !important;
+        margin-bottom: 1rem !important;
+    }
+    .commits-header h6{
+        font-size: 24px !important;
+    }
+
+    .acitvity-header{
+        display: flex;
+        text-align: start !important;
+        justify-content: start !important;
+        align-items: start !important;
+        flex-direction: column !important;
+        margin-bottom: 1rem !important;
+    }
+
+    .acitvity-header h6{
+        font-size: 24px !important;
     }
 }

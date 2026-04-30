@@ -36,8 +36,8 @@ export default function Activity(){
             <Commits commits={commits}/>
 
             <div className="github-calendar-container d-flex flex-column mt-4">
-                <div className="acitvity-header d-flex align-items-center justify-content-between">
-                    <h6>GitHub Contributions</h6>
+                <div className="acitvity-header d-flex align-items-center justify-content-between mb-3">
+                    <h6 className='fs-5'>GitHub Contributions</h6>
                     <a href="https://github.com/Apridonidze">View full profile <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
                 <GitHubCalendar username='Apridonidze' style={{backgroundColor : '#121c2a' , padding :'1rem' , borderRadius : '10px'}}/>
