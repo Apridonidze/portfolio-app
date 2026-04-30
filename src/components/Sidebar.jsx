@@ -1,3 +1,5 @@
+import resume from '../assets/resume/Giorgi aphridonidze-1.pdf'
+
 import '../style/sidebar.css'
 
 export default function Sidebar({ activeSection }){
@@ -21,7 +23,7 @@ export default function Sidebar({ activeSection }){
             </div>
 
             <div className="sidebar-bottom">
-                <a className='resume' href='https://media.licdn.com/dms/image/v2/D4D2DAQHT0b_RkUsZ7w/profile-treasury-document-cover-images_1920/B4DZyZQW1KJwBM-/0/1772097729154?e=1777939200&v=beta&t=QRJxb5Xb9dr6yvfwRPopmCA0SF2q0SkZ-4MDSVu3o-s' target='_blank'><i class="fa-solid fa-file-arrow-down"></i>RESUME</a>
+                <a className='resume' href={resume} target='_blank'><i class="fa-solid fa-file-arrow-down"></i>RESUME</a>
                 <div className="socials">
                     <a href='https://github.com/Apridonidze' target='_blank'><i class="fa-brands fa-github"></i></a>
                     <a href='https://www.linkedin.com/in/giorgi-aphridonidze-7aa896291/' target='_blank'><i class="fa-brands fa-linkedin-in"></i></a>
