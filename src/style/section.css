@@ -36,11 +36,6 @@
     cursor: pointer;
 }
 
-.skill-container:hover{
-    box-shadow: 0px 0px 8px -1px #5eead4;
-    scale: 1.03;
-}
-
 .skill-title{
     font-size: 16px !important;
     letter-spacing: 2px;
@@ -68,11 +63,6 @@
     color: #bdc8d4;
     transition: all 0.2s ease;
     cursor: pointer;
-}
-
-.experience-container:hover{
-    box-shadow: 0px 0px 8px -1px #5eead4;
-    scale: 1.01;
 }
 
 .smallText{
