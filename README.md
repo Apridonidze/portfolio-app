@@ -1,16 +1,33 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fully responsive developer portfolio built using Vite, React, and Bootstrap.
+Includes an overview of my skills, featured projects, and contact section. Designed to be fast, clean, and easy to navigate. This portfolio serves as my main place to present my work and experience as a web developer.
 
-Currently, two official plugins are available:
+### You Can Visit Website :https://portfolio-fbhn.vercel.app/](https://portfolio-app-rouge-alpha.vercel.app/ or Run App Locally on Your Machine 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features 
 
-## React Compiler
+- Built with React + Vite for fast performance and a modern development setup
+- Fully responsive design, optimized for both desktop and mobile
+- Sidebar section with quick links to my socials and navigation links
+- About Me section with a short overview of my background
+- Skills section highlighting the technologies and tools I use
+- Work Experience section outlining my professional journey
+- Projects section showcasing my personal and practical projects
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Technologies
 
-## Expanding the ESLint configuration
+- React + Vite
+- Bootstrap
+- Css
+- Git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Deployemnet : **Vercel**
+
+## Installation
+
+1. Clone Repository - git clone https://github.com/Apridonidze/portfolio
+
+2. Install Dependencies - npm install
+   
+3. Running the App :npm run dev
