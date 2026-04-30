@@ -36,7 +36,6 @@ export default function Skills({ setActiveSection }){
             'Rate Limiting',
             'JWT',
             'Zod',
-            '.env',
             ]
         },
         {
@@ -45,7 +44,6 @@ export default function Skills({ setActiveSection }){
             'MySQL',
             'Stripe',
             'SendGrid',
-            'Third-Party Integration'
             ]
         },
         {
