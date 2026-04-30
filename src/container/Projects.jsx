@@ -6,14 +6,12 @@ import ProjectScreenshot3 from '../assets/project-screenshots/Screenshot 2025-11
 import ProjectScreenshot4 from '../assets/project-screenshots/img8.png'
 import ProjectScreenshot5 from '../assets/project-screenshots/Screenshot 2025-12-22 113631.png'
 
-import { useRef,useEffect, useState } from 'react'
-import { GitHubCalendar } from 'react-github-calendar'
-import axios from 'axios'
+import { useRef,useEffect } from 'react'
+import Activity from '../components/Activity'
 
 export default function Projects({ setActiveSection }){
 
     const sectionRef = useRef(null) 
-    const [commints, setCommits] = useState([]);
 
     useEffect(() => {
 
@@ -21,28 +19,6 @@ export default function Projects({ setActiveSection }){
         if(sectionRef.current) observer.observe(sectionRef.current)
         
     },[setActiveSection])
-
-    useEffect(() => {
-        const fetchData = async() =>{
-            try{
-                const response = await axios.get("https://api.github.com/repos/Apridonidze/Apridonidze/commits?per_page=3")
-                const data = response.data;
-
-                const commits = data.map(c => ({
-                    message: c.commit.message,
-                    url: c.html_url,
-                    date: c.commit.author.date
-                }));
-
-                setCommits(commits);
-
-            }catch(err){
-                setCommits([]);
-            };
-        };
-
-        fetchData();
-    },[]);
     
     const projects = [
         {
@@ -124,6 +100,7 @@ export default function Projects({ setActiveSection }){
 
     return(
         <section id="Projects" ref={sectionRef}>
+            
             <span className="section-id small">04 / Projects</span>
             <h1 className="section-title ">Things I've built</h1>
             
@@ -131,16 +108,7 @@ export default function Projects({ setActiveSection }){
                 {projects.map((project, projectId) => <Project project={project} projectId={projectId}/>)}
             </div>
 
-            <div className="mt-5">
-                <div className="d-flex flex-column">
-                    <h6>Recent Commits</h6>
-                    {commints?.map((commit, commitId) => <span key={commitId}>{commit.id} {}</span>)}
-                </div>
-                <div className="d-flex flex-column">
-                    <h6 >GitHub Activity</h6>
-                    <GitHubCalendar username='Apridonidze' style={{backgroundColor : '#121c2a' , padding :'1rem' , borderRadius : '10px'}}/>
-                </div>
-            </div>
+            <Activity />
 
         </section>
     );
