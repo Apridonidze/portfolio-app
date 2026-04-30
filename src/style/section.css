@@ -184,9 +184,18 @@
     transition: all 0.2s ease;
 }
 
+.githubBtn a{
+    color: #9da8b4;
+    text-decoration: none;
+}
+
 .githubBtn:hover{
     scale: 1.02;
     border: 1px solid #1e293a;
+}
+
+.githubBtn:hover a{
+    color: #bdc8d4;
 }
 
 .commits-container{
