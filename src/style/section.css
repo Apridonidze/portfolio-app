@@ -240,6 +240,13 @@
 .commit-container{
     padding: 10px 5px;
     border-bottom: 1px solid #1e293a;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+
+.commit-container:hover{
+    scale: 1.01;
 }
 
 .commit-container a{
