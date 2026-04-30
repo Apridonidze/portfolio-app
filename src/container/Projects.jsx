@@ -7,6 +7,7 @@ import ProjectScreenshot4 from '../assets/project-screenshots/img8.png'
 import ProjectScreenshot5 from '../assets/project-screenshots/Screenshot 2025-12-22 113631.png'
 
 import { useRef,useEffect } from 'react'
+import { GitHubCalendar } from 'react-github-calendar'
 
 export default function Projects({ setActiveSection }){
 
@@ -105,6 +106,14 @@ export default function Projects({ setActiveSection }){
             <div className="section-body row gap-5 my-3">
                 {projects.map((project, projectId) => <Project project={project} projectId={projectId}/>)}
             </div>
+
+            <div className="mt-5">
+                <div className="d-flex flex-column">
+                    <h6 >GitHub Activity</h6>
+                    <GitHubCalendar username='Apridonidze' style={{backgroundColor : '#121c2a' , padding :'1rem' , borderRadius : '10px'}}/>
+                </div>
+            </div>
+
         </section>
     );
 };
