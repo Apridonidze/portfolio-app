@@ -25,10 +25,16 @@ export default function Projects({ setActiveSection }){
     useEffect(() => {
         const fetchData = async() =>{
             try{
-                const response = await axios.get(`https://api.github.com/users/Apridonidze/events/public`)
-                const filteredData = response.data.filter(resp => resp.type == 'PushEvent').slice(0, 5)
-                
-                setCommits(filteredData);
+                const response = await axios.get("https://api.github.com/repos/Apridonidze/Apridonidze/commits?per_page=3")
+                const data = response.data;
+
+                const commits = data.map(c => ({
+                    message: c.commit.message,
+                    url: c.html_url,
+                    date: c.commit.author.date
+                }));
+
+                setCommits(commits);
 
             }catch(err){
                 setCommits([]);
@@ -126,6 +132,10 @@ export default function Projects({ setActiveSection }){
             </div>
 
             <div className="mt-5">
+                <div className="d-flex flex-column">
+                    <h6>Recent Commits</h6>
+                    {commints?.map((commit, commitId) => <span key={commitId}>{commit.id} {}</span>)}
+                </div>
                 <div className="d-flex flex-column">
                     <h6 >GitHub Activity</h6>
                     <GitHubCalendar username='Apridonidze' style={{backgroundColor : '#121c2a' , padding :'1rem' , borderRadius : '10px'}}/>
