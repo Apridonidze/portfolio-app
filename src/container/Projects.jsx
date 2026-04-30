@@ -6,19 +6,37 @@ import ProjectScreenshot3 from '../assets/project-screenshots/Screenshot 2025-11
 import ProjectScreenshot4 from '../assets/project-screenshots/img8.png'
 import ProjectScreenshot5 from '../assets/project-screenshots/Screenshot 2025-12-22 113631.png'
 
-import { useRef,useEffect } from 'react'
+import { useRef,useEffect, useState } from 'react'
 import { GitHubCalendar } from 'react-github-calendar'
+import axios from 'axios'
 
 export default function Projects({ setActiveSection }){
 
     const sectionRef = useRef(null) 
-    
+    const [commints, setCommits] = useState([]);
+
     useEffect(() => {
 
         const observer = new IntersectionObserver(([entry]) => {entry.isIntersecting ? setActiveSection("Projects") : null} , { threshold : 0.1})
         if(sectionRef.current) observer.observe(sectionRef.current)
         
     },[setActiveSection])
+
+    useEffect(() => {
+        const fetchData = async() =>{
+            try{
+                const response = await axios.get(`https://api.github.com/users/Apridonidze/events/public`)
+                const filteredData = response.data.filter(resp => resp.type == 'PushEvent').slice(0, 5)
+                
+                setCommits(filteredData);
+
+            }catch(err){
+                setCommits([]);
+            };
+        };
+
+        fetchData();
+    },[]);
     
     const projects = [
         {
