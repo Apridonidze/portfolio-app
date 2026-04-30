@@ -100,8 +100,8 @@
     padding: 5px 10px;
     border-radius: 5px;
     font-size: 14px;
-    color: #b2bdc9;
-    border: 1px solid rgb(127, 137, 148);
+    color: #9da8b4;
+    border: 1px solid #1e293a;
     display: flex;
     width: fit-content;
     gap: 5px;
@@ -197,6 +197,48 @@
 .githubBtn:hover{
     scale: 1.02;
     border: 1px solid #1e293a;
+}
+
+.commits-container{
+    background-color: #121c2a;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.github-calendar-container{
+    background-color: #121c2a;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.activity-container h6{
+    color: #d8dde8;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.activity-container a {
+    transition: all 0.2s ease;
+    color: #d8dde8;
+    text-decoration: none;
+}
+
+.activity-container a:hover{
+    color: #56d6c3;
+}
+
+.commits-main > :last-child{
+    border: none;
+}
+
+.commit-container{
+    padding: 10px 5px;
+    border-bottom: 1px solid #1e293a;
+}
+
+.commit-container a{
+    color: #9da8b4;
 }
 
 @media (max-width : 834px) {
