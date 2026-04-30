@@ -17,12 +17,12 @@ export default function Skills({ setActiveSection }){
             title: 'Frontend',
             skills: [
             'React',
-            'JavaScript',
+            'State Management',
+            'Bootstrap',
+            'recharts.js',
             'HTML',
             'CSS',
-            'Bootstrap',
-            'State Management',
-            'recharts.js'
+            'JavaScript',
             ]
         },
         {
@@ -33,10 +33,9 @@ export default function Skills({ setActiveSection }){
             'REST API',
             'WebSockets',
             'Webhooks',
+            'Rate Limiting',
             'JWT',
             'Zod',
-            'uuid',
-            'Rate Limiting',
             '.env',
             ]
         },
