@@ -269,6 +269,22 @@
     }
 }
 
+
+@media (max-width : 472px){
+    .commit-container i{
+        display: none;
+    }
+
+    .commit-start h6{
+        width:60vw;
+    }
+
+    .commit-container div{
+        width: auto;
+    }
+
+}
+
 @media (max-width : 462px) {
     .commits-header{
         display: flex;
@@ -277,6 +293,7 @@
         align-items: start !important;
         flex-direction: column !important;
         margin-bottom: 1rem !important;
+        gap: 0.7rem;
     }
     .commits-header h6{
         font-size: 24px !important;
@@ -289,6 +306,7 @@
         align-items: start !important;
         flex-direction: column !important;
         margin-bottom: 1rem !important;
+        gap: 0.7rem;
     }
 
     .acitvity-header h6{

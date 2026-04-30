@@ -18,7 +18,7 @@ export default function Commits({ commits }){
     return(
         <div className="commits-container my-2">
             <div className="commits-header d-flex align-items-center justify-content-between mb-2">
-                <h6 className="fs-5">Recent Commits</h6>
+                <h6 className="fs-5 p-0">Recent Commits</h6>
                 <a href="https://github.com/Apridonidze/portfolio-app/commits">View all commits <i className="fa-solid fa-angle-right"></i></a>
             </div>
             
