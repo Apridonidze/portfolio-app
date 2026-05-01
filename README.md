@@ -17,11 +17,8 @@ Includes an overview of my skills, featured projects, and contact section. Desig
 
 ## Technologies
 
-- React + Vite
-- Bootstrap
-- Css
-- Git & GitHub
-- Vercel
+- **Frontend:** React , Bootstrap, Css
+-- **Other Technologies:**  Git & GitHub, Vercel
 
 ## Installation
 
