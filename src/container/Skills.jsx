@@ -23,6 +23,7 @@ export default function Skills({ setActiveSection }){
             'HTML',
             'CSS',
             'JavaScript',
+            'TypeScript'
             ]
         },
         {
@@ -30,6 +31,8 @@ export default function Skills({ setActiveSection }){
             skills: [
             'Node.js',
             'ExpressJS',
+            'TypeScript',
+            'JavaScript',
             'REST API',
             'WebSockets',
             'Webhooks',
