@@ -18,7 +18,7 @@ Includes an overview of my skills, featured projects, and contact section. Desig
 ## Technologies
 
 - **Frontend:** React , Bootstrap, Css
--- **Other Technologies:**  Git & GitHub, Vercel
+- **Other Technologies:**  Git & GitHub, Vercel
 
 ## Installation
 
