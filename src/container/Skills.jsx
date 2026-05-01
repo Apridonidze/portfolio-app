@@ -16,6 +16,7 @@ export default function Skills({ setActiveSection }){
         {
             title: 'Frontend',
             skills: [
+            'Next.js',
             'React',
             'State Management',
             'Bootstrap',
