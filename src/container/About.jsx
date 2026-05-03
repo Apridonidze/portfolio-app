@@ -19,7 +19,7 @@ export default function About({ setActiveSection }){
             <h1 className="section-title ">About Me</h1>
 
             <div className="section-body">
-                <h6 className="my-3">I’m a <b>full-stack developer</b> focused on building real-world web applications that solve practical problems and scale over time. I work across the entire stack using <b className="lightHighlight">React, Node.js, Express, and MySQL,</b> delivering production-ready products.</h6>
+                <h6 className="my-3">I’m a <b>full-stack developer</b> focused on building real-world web applications that solve practical problems and scale over time. I work across the entire stack using <b className="lightHighlight">Next, React, Node.js, Express, and MySQL,</b> delivering production-ready products.</h6>
 
                 <h6 className="my-3">My experience comes from <b>freelance projects</b> where I handled everything from planning to deployment. This helped me build strong communication skills and the ability to deliver features under real constraints with a product-focused mindset.</h6>
 
