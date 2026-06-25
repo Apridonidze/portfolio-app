@@ -18,20 +18,22 @@ export default function Skills({ setActiveSection }){
             skills: [
             'Next.js',
             'React',
+            'TypeScript',
+            'JavaScript',
             'State Management',
             'Bootstrap',
             'recharts.js',
             'HTML',
             'CSS',
-            'JavaScript',
-            'TypeScript'
             ]
         },
         {
             title: 'Backend',
             skills: [
             'Node.js',
+            "Python",
             'ExpressJS',
+            "FastAPI",
             'TypeScript',
             'JavaScript',
             'REST API',
@@ -58,6 +60,7 @@ export default function Skills({ setActiveSection }){
             'Docker',
             'Vercel',
             'Railway',
+            "Render"
             ]
         }
     ];

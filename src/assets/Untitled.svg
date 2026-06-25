@@ -1,0 +1,7 @@
+<svg width="128" height="128" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="16" height="16" rx="3" fill="#6C5CE7"></rect>
+  
+  <!-- Smaller star -->
+  <path d="M8 3L9.2 6H12L9.8 7.8L10.6 11L8 9.3L5.4 11L6.2 7.8L4 6H6.8Z" fill="white"></path>
+</svg>
