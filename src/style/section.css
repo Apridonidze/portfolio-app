@@ -155,16 +155,6 @@
     transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
-.project-container:hover .project-start img{
-    transform: scale(1.05);
-    opacity: 1;
-}
-
-.project-container:hover{
-    box-shadow: 0px 0px 8px -1px #5eead4;
-    scale: 1.01;
-}
-
 .project-end h4{
     color: #d8dde8;
     font-weight: bold;
@@ -190,14 +180,10 @@
 }
 
 .githubBtn:hover{
-    scale: 1.02;
+    color: #5eead4;
+    scale: 1.015;
     border: 1px solid #1e293a;
 }
-
-.githubBtn:hover a{
-    color: #bdc8d4;
-}
-
 .commits-container{
     background-color: #121c2a;
     width: 100%;

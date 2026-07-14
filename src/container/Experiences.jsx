@@ -29,13 +29,13 @@ export default function Experiences({ setActiveSection }){
             "Developed interactive Next dashboards and dynamic HTML tables for filtering, sorting, and reviewing scraped leads.",
         ],
         used_technologies: [
-            "React",
             "Next.js",
             "Python",
             "FastAPI",
             "REST APIs",
             "Instagrapi",
             "MySQL",
+            "MongoDB",
             "JWT",
             "Git",
             "GitHub",
@@ -58,7 +58,10 @@ export default function Experiences({ setActiveSection }){
         used_technologies: [
             "HTML5",
             "CSS3",
-            "JavaScript"
+            "JavaScript",
+            "Bootstrap",
+            "Git",
+            "GitHub"
         ]
     },
     {
@@ -76,7 +79,9 @@ export default function Experiences({ setActiveSection }){
         used_technologies: [
             "HTML5",
             "CSS3",
-            "JavaScript"
+            "JavaScript",
+            "Git",
+            "GitHub"
         ]
     },
 ];  
