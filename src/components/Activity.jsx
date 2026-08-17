@@ -11,7 +11,7 @@ export default function Activity(){
     useEffect(() => {
         const fetchData = async() =>{
             try{
-                const response = await axios.get("https://api.github.com/repos/Apridonidze/Apridonidze/commits?per_page=3")
+                const response = await axios.get("https://api.github.com/repos/Apridonidze/portfolio-app/commits?per_page=3")
                 const data = response.data;
 
                 const commits = data.map(c => ({
