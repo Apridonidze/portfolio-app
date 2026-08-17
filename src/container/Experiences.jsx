@@ -15,6 +15,30 @@ export default function Experiences({ setActiveSection }){
 
    const experiences = [
   {
+    date: "Aug 2026 - Present",
+    position: "Fullstack Developer",
+    company_name: "Upwork Freelancing",
+    description:
+      "Contributed to a B2B sourcing platform that connects companies with manufacturers capable of producing customized products to exact specifications, including products requiring specific OTC actives and supplements.",
+    responsibilities: [
+      "Built a distributed manufacturer-scraping system using Redis and BullMQ to orchestrate and distribute concurrent scraping jobs at scale.",
+      "Parsed and enriched scraped manufacturer data, using Groq to normalize inconsistent supplier and product data into structured, standardized records.",
+      "Designed an event-driven matching engine powered by Redis and BullMQ that automatically triggers when new buyer requirements or manufacturer data become available.",
+      "Implemented hybrid hard- and soft-matching logic across product specifications and manufacturer capabilities to score and rank candidates.",
+      "Returned ranked manufacturer matches with confidence scores, connecting buyers with qualified suppliers for their specific requirements.",
+    ],
+    used_technologies: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Redis",
+      "BullMQ",
+      "Git",
+      "GitHub",
+      "Docker",
+    ],
+  },
+  {
     date: "May 2026 - Present",
     position: "Full-Stack Developer",
     company_name: "Upwork",

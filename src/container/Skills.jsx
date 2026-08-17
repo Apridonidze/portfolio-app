@@ -41,6 +41,7 @@ export default function Skills({ setActiveSection }){
                 'Rate Limiting',
                 'JWT',
                 'Zod',
+                'BullMQ',
             ]
         },
         {
@@ -48,6 +49,8 @@ export default function Skills({ setActiveSection }){
             skills: [
             'MySQL',
             'MongoDb',
+            'Redis',
+            'Groq',
             'Instagrapi',
             'Stripe',
             'SendGrid',
