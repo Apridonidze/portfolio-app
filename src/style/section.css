@@ -151,8 +151,7 @@
     height: 100%;
     aspect-ratio: 16 / 10;
     object-fit: cover;
-    opacity: 0.8;
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
 .project-end h4{
@@ -256,9 +255,6 @@
 }
 
 @media (max-width: 856px){
-    .project-start img{
-        opacity: 1;
-    }
     #Projects{
         width: 100%;
     }
