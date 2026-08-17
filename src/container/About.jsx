@@ -19,11 +19,11 @@ export default function About({ setActiveSection }){
             <h1 className="section-title ">About Me</h1>
 
             <div className="section-body">
-                <h6 className="my-3">I’m a <b>full-stack developer</b> focused on building real-world web applications that solve practical problems and scale over time. I work across the entire stack using <b className="lightHighlight">Next, React, Node.js, Express, MySQL and MongoDB</b> delivering production-ready products.</h6>
+                <h6 className="my-3">I’m a <b>full-stack developer</b> focused on building production-ready web applications and backend systems that solve practical business problems. I work across the stack with <b className="lightHighlight">Next.js, React, Node.js, Express, MySQL, MongoDB, and Redis</b>.</h6>
 
-                <h6 className="my-3">My experience comes from <b>freelance projects</b> where I handled everything from planning to deployment. This helped me build strong communication skills and the ability to deliver features under real constraints with a product-focused mindset.</h6>
+                <h6 className="my-3">Through <b>freelance projects</b>, I’ve built distributed scraping infrastructure, event-driven workflows with BullMQ, and data-processing pipelines that use Groq to turn inconsistent information into structured records. I’ve also developed matching logic that scores and ranks manufacturers against detailed buyer requirements.</h6>
 
-                <h6 className="my-3">I focus on clean architecture & scalability, performance, and usability, building systems that are maintainable and scalable. I can take an idea or design and turn it into a complete application or improve existing systems.</h6>
+                <h6 className="my-3">I care about clean architecture, scalability, performance, and usability. I’m comfortable taking a feature from planning through deployment, improving existing systems, and communicating clearly with clients while working within real product constraints.</h6>
 
                 <h6 className="my-3">Currently, <b className="lightHighlight">I’m looking for opportunities</b> to contribute to real products, collaborate with teams, and continue growing as a developer through meaningful work.</h6>
             </div>
