@@ -1,86 +1,108 @@
-import { useRef, useEffect } from "react"
-import Skill from "../components/Skill"
+import { useRef, useEffect } from "react";
+import Skill from "../components/Skill";
 
-export default function Skills({ setActiveSection }){
+export default function Skills({ setActiveSection }) {
+    const sectionRef = useRef(null);
 
-    const sectionRef = useRef(null) 
 
     useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setActiveSection("Skills");
+                }
+            },
+            {
+                threshold: 0,
+                rootMargin: "-25% 0px -65% 0px",
+            }
+        );
 
-        const observer = new IntersectionObserver(([entry]) => {entry.isIntersecting ? setActiveSection("Skills") : null} , { threshold : 0.5})
-        if(sectionRef.current) observer.observe(sectionRef.current)
-        
-    },[setActiveSection])
+        const section = sectionRef.current;
+
+        if (section) {
+            observer.observe(section);
+        }
+
+        return () => {
+            observer.disconnect();
+        };
+    }, [setActiveSection]);
 
     const skills = [
         {
-            title: 'Frontend',
+            title: "Frontend",
             skills: [
-                'Next.js',
-                'React',
-                'TypeScript',
-                'JavaScript',
-                'Bootstrap',
-                'recharts.js',
-                'HTML',
-                'CSS',
-            ]
+                "Next.js",
+                "React",
+                "TypeScript",
+                "JavaScript",
+                "Bootstrap",
+                "HTML",
+                "CSS",
+            ],
         },
         {
-            title: 'Backend',
+            title: "Backend",
             skills: [
-                'TypeScript',
-                'JavaScript',
+                "TypeScript",
+                "JavaScript",
                 "Python",
-                'Node.js',
-                'ExpressJS',
+                "Node.js",
+                "ExpressJS",
                 "FastAPI",
-                'REST API',
-                'WebSockets',
-                'Webhooks',
-                'Rate Limiting',
-                'JWT',
-                'Zod',
-                'BullMQ',
-            ]
+                "REST API",
+                "WebSockets",
+                "Socket.IO",
+                "Webhooks",
+                "BullMQ",
+            ],
         },
         {
-            title: 'Database & Integrations',
+            title: "Database & Integrations",
             skills: [
-            'MySQL',
-            'MongoDb',
-            'Redis',
-            'Groq',
-            'Instagrapi',
-            'Stripe',
-            'SendGrid',
-            ]
+                "MySQL",
+                "MongoDb",
+                "Redis",
+                "Groq",
+                "Stripe",
+                "SendGrid",
+            ],
         },
         {
-            title: 'Tools & Deployment',
+            title: "Tools & Deployment",
             skills: [
-            'Git',
-            'GitHub',
-            'Docker',
-            'Vercel',
-            'Railway',
-            "Render"
-            ]
-        }
+                "Git",
+                "GitHub",
+                "Docker",
+                "Vercel",
+                "Railway",
+                "Render",
+            ],
+        },
     ];
 
-    return(
+    return (
         <section id="Skills" ref={sectionRef}>
+            <span className="section-id small">
+                02 / SKILLS
+            </span>
 
-            <span className="section-id small">02 / SKILLS</span>
-            <h1 className="section-title ">Skills & Technologies</h1>
+            <h1 className="section-title">
+                Skills & Technologies
+            </h1>
 
-            <div className="section-body mt-1 ">
+            <div className="section-body mt-1">
                 <div className="skills-container">
-                    {skills.map(skill => <Skill title={skill.title} skills={skill.skills}/>)}
+                    {skills.map((skill) => (
+                        <Skill
+                            key={skill.title}
+                            title={skill.title}
+                            skills={skill.skills}
+                        />
+                    ))}
                 </div>
             </div>
-
         </section>
     );
-};
+}

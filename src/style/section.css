@@ -1,306 +1,677 @@
-.section-id{
-    color: #5eead4;
+.section-id {
+    color: var(--text-muted);
     letter-spacing: 3px;
     font-size: 14px;
+    font-family: "JetBrains Mono", monospace;
 }
-.section-title{
-    font-weight: bold;
+
+.section-title {
+    color: var(--text-primary);
+    font-weight: 650;
     font-size: 52px;
     margin-top: 1rem;
 }
-.section-body h6{
+
+.section-body h6 {
+    color: var(--text-body);
     font-size: 18px;
 }
 
-.section-body b{
-    color: #5eead4;
+.section-body b {
+    color: var(--text-heading);
+    font-weight: 600;
 }
 
-.section-body .lightHighlight{
-    color: #d8dde8;
+.section-body .lightHighlight {
+    color: var(--text-secondary);
 }
 
-/*  */
 
-.skills-container{
+/* =========================
+   SKILLS
+========================= */
+
+.skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap:1.5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
 }
 
-.skill-container{
-    border: 1px solid #121c2a;
-    background-color: #121c2a;
-    border-radius: 10px;
+.skill-container {
+    border: 1px solid var(--border);
+    background-color: var(--bg-card);
+    border-radius: 5px;
+
     transition: all 0.2s ease;
+
     cursor: pointer;
 }
 
-.skill-title{
+.skill-container:hover {
+    background-color: var(--bg-card-hover);
+    border-color: var(--border-strong);
+
+    transform: translateY(-2px);
+}
+
+.skill-title {
     font-size: 16px !important;
     letter-spacing: 2px;
-    color: #5eead4;
+    color: var(--text-heading);
 }
 
-.skill{
-    padding: 5px 10px;
-    border-radius: 10px;
-    background-color: #1e293a;
-    color: #bdc8d4;
+.skill {
+    display: inline-flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 7px 11px;
+
+    border: 1px solid var(--border);
+    border-radius: 5px;
+
+    color: var(--text-secondary);
+
+    font-size: 14px;
+    line-height: 1;
 }
 
-/*  */
+.skill-icon {
+    width: 15px;
+    height: 15px;
 
-.experience-container{
-    display:flex ;
+    color: var(--text-primary);
+
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+.experience-container {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     gap: 2rem;
+
     padding: 1rem;
-    border-radius: 10px;
-    margin: 1rem 0rem;
-    background-color: #121c2a;
-    color: #bdc8d4;
+    margin: 1rem 0;
+
+    border-radius: 5px;
+
+    background-color: var(--bg-card);
+    color: var(--text-body);
+
+    border: 1px solid var(--border);
+
     transition: all 0.2s ease;
+
     cursor: pointer;
 }
 
-.smallText{
+.experience-container:hover {
+    background-color: var(--bg-card-hover);
+    border-color: var(--border-strong);
+}
+
+.smallText {
+    color: var(--text-muted);
     font-size: 14px;
 }
 
-.position{
-    color: #d8dde8;
+.position {
+    color: var(--text-heading);
 }
 
-.companyName{
-    color: #5eead4;
+.companyName {
+    color: var(--text-secondary);
 }
 
-.experience-main h4{
+.experience-main h4 {
+    color: var(--text-heading);
     font-size: 20px;
 }
 
-.experience-main h6{
+.experience-main h6 {
+    color: var(--text-secondary);
     font-size: 15px;
 }
 
-#responsibilities{
-    cursor: pointer;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 14px;
-    color: #9da8b4;
-    border: 1px solid #1e293a;
+
+/* Responsibilities Button */
+
+#responsibilities {
     display: flex;
+
     width: fit-content;
+
     gap: 5px;
-}
-#responsibilities:hover{
-    color: #5eead4;
-    border: 1px solid #5eead4;
-}
 
-.usedTechnology{
-    color: #56d6c3;
-    background-color: rgba(94, 234, 212, 0.2);
-    border-radius: 15px;
-}
+    padding: 5px 10px;
 
-.experience-footer ul{
-    margin-top: 1rem;
-    position: relative;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+
+    color: var(--text-secondary);
+
     font-size: 14px;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+#responsibilities:hover {
+    color: var(--text-primary);
+
+    border-color: var(--border-strong);
+
+    background-color: var(--bg-tag);
 }
 
 
-.experience-footer ul::before{
-    content: '';
-    height: 87%;
-    border: 0.1px solid #5eead4;
+/* Used Technologies */
+
+.usedTechnology {
+    display: inline-flex;
+    align-items: center;
+
+    color: var(--text-secondary);
+
+    background-color: var(--bg-tag);
+
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.usedTechnologyIcon {
+    width: 14px;
+    height: 14px;
+
+    flex-shrink: 0;
+
+    color: var(--text-muted);
+}
+
+
+/* Experience Timeline */
+
+.experience-footer ul {
+    position: relative;
+
+    margin-top: 1rem;
+    padding-left: 2rem;
+
+    color: var(--text-secondary);
+
+    font-size: 15px;
+
+    list-style: none;
+}
+
+.experience-footer ul::before {
+    content: "";
+
     position: absolute;
+
     top: 1rem;
-    left: 0.99rem;
+    left: 0.445rem;
+
+    width: 1px;
+    height: 87%;
+
+    background: var(--border-strong);
+
+    z-index: 0;
 }
 
-.experience-footer ul li::marker{
-    color: #5eead4;
-    font-size: 22px;
+.experience-footer ul li {
+    position: relative;
 }
+
+.experience-footer ul li::before {
+    content: "";
+
+    position: absolute;
+
+    width: 7px;
+    height: 7px;
+
+    left: -1.72rem;
+    top: 0.5rem;
+
+    border-radius: 50%;
+
+    background: var(--text-muted);
+
+    z-index: 2;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
 
 .project-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    border-radius: 0.75rem;
-    padding: 1.5rem;
-    background-color: #121c2a;
-    transition: all 0.2s ease;
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.15fr)
+        minmax(0, 1fr);
+
+    gap: 2rem;
+
     width: 100%;
+
+    padding: 1.5rem;
+
+    background-color: var(--bg-card);
+
+    border: 1px solid var(--border);
+    border-radius: 5px;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
 }
+
+.project-container:hover {
+    background-color: var(--bg-card-hover);
+    border-color: var(--border-strong);
+}
+
+
+/* Project Image */
 
 .project-start {
     position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    min-height: 320px;
+    max-height: 380px;
+
     overflow: hidden;
-    border-radius: 0.5rem;
-    transition: all 0.2s ease;
+
+    border: 1px solid var(--border);
+    border-radius: 5px;
+
+    background-color: var(--bg-card);
 }
 
 .project-start img {
+    display: block;
+
     width: 100%;
     height: 100%;
-    aspect-ratio: 16 / 10;
+
     object-fit: cover;
+    object-position: top;
+
     transition: transform 0.5s ease;
 }
 
-.project-end h4{
-    color: #d8dde8;
-    font-weight: bold;
+.project-container:hover .project-start img {
+    transform: scale(1.02);
+}
+
+
+/* Project Content */
+
+.project-end {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-width: 0;
+
+    padding: 0.5rem 0;
+}
+
+.project-end h4 {
+    margin: 0 0 0.6rem;
+
+    color: var(--text-primary);
+
     font-size: 26px;
+    font-weight: 650;
+    line-height: 1.2;
 }
 
-.project-end h6{
+.project-end h6 {
+    margin: 0;
+
+    color: var(--text-secondary);
+
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.project-end .usedTechnology {
+    font-size: 13px;
+}
+
+
+
+.githubBtn {
+    height: 46px;
+    margin-top: auto !important;
+    color: var(--text-heading);
+    background-color: transparent;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 16px;
+    transition:
+        color 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.githubBtn a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    color: var(--text-secondary);
+
+    text-decoration: none;
+}
+
+.githubBtn:hover {
+    background-color: var(--bg-card-hover);
+    border-color: var(--border-strong);
+    transform: translateY(-1px);
+    color: var(--text-primary);
+}
+
+.githubBtn:hover a {
+    color: var(--text-primary);
+}
+
+.background-section-title {
+    font-size: 42px;
+}
+
+
+.background-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 1.25rem;
+
+    margin-top: 2rem;
+}
+
+
+
+.background-card {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 320px;
+
+    padding: 1.5rem;
+
+    background-color: var(--bg-card);
+
+    border: 1px solid var(--border);
+    border-radius: 5px;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.background-card:hover {
+    background-color: var(--bg-card-hover);
+
+    border-color: var(--border-strong);
+
+    transform: translateY(-2px);
+}
+
+
+
+.background-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 1.75rem;
+}
+
+.background-type {
+    color: var(--text-muted);
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+/* Top-right Icon */
+
+.background-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    color: var(--text-secondary);
+
+    background-color: rgba(255, 255, 255, 0.025);
+
+    border: 1px solid var(--border);
+    border-radius: 5px;
+
     font-size: 16px;
 }
 
-.githubBtn{
-    margin-top: 1.5rem !important;
-    color: #d8dde8;
-    border: 1px solid #1e293a;
+
+/* College / Certification Title Row */
+
+.background-title-row {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 11px;
+}
+
+.background-title-row > svg {
+    width: 18px;
+    height: 18px;
+
+    margin-top: 3px;
+
+    color: var(--text-primary);
+
+    flex-shrink: 0;
+}
+
+.background-title-row > div {
+    min-width: 0;
+}
+
+
+/* Background Content */
+
+.background-content h3 {
+    margin: 0 0 5px;
+
+    color: var(--text-primary);
+
     font-size: 18px;
-    height: 50px;
-    transition: all 0.2s ease;
+    font-weight: 600;
+    line-height: 1.35;
 }
 
-.githubBtn a{
-    color: #9da8b4;
-    text-decoration: none;
-}
+.background-content h5 {
+    margin: 0;
 
-.githubBtn:hover{
-    color: #5eead4;
-    scale: 1.015;
-    border: 1px solid #1e293a;
-}
-.commits-container{
-    background-color: #121c2a;
-    width: 100%;
-    padding: 1rem;
-    border-radius: 10px;
-}
+    color: var(--text-heading);
 
-.github-calendar-container{
-    background-color: #121c2a;
-    padding: 1rem;
-    border-radius: 10px;
-}
-
-.activity-container h6{
-    color: #d8dde8;
+    font-size: 14px;
     font-weight: 500;
-    font-size: 16px;
-    padding-left: 10px;
 }
 
-.activity-container a {
-    transition: all 0.2s ease;
-    color: #bdc8d4;
-    text-decoration: none;
+.background-date {
+    display: block;
+
+    margin-top: 7px;
+    margin-bottom: 1.15rem;
+
+    color: var(--text-muted);
+
+    font-size: 12px;
 }
 
-.commit-start{
-    position: relative;
-    width: 100%;
-    max-width: 300px !important;
-}
+.background-content p {
+    max-width: 520px;
 
-.commit-start h6::before{
-    content: '';
-    left: 0px;
-    top: 8px;
-    width: 5px;
-    height: 5px;
-    border-radius: 100%;
-    position: absolute;
-    background-color: #5eead4;
-}
+    margin: 0;
 
-.activity-container a:hover{
-    color: #56d6c3;
-}
+    color: var(--text-secondary);
 
-.activity-container a{
-    color: #9da8b4 ;
-}
-
-.commits-main > :last-child{
-    border: none;
-}
-
-.commit-container{
-    padding: 10px 5px;
-    border-bottom: 1px solid #1e293a;
-    transition: all 0.2s ease;
-    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
 }
 
 
-.commit-container:hover{
-    scale: 1.01;
+/* Background Tags */
+
+.background-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 7px;
+
+    margin-top: auto;
+
+    padding-top: 1.5rem;
 }
 
-.commit-container a{
-    color: #9da8b4;
+.background-tags span {
+    padding: 5px 9px;
+
+    color: var(--text-secondary);
+
+    background: transparent;
+
+    border: 1px solid var(--border);
+    border-radius: 4px;
+
+    font-size: 11px;
 }
 
-@media (max-width: 856px){
-    #Projects{
+@media (max-width: 856px) {
+
+    #Projects {
         width: 100%;
     }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+
+        gap: 1.25rem;
+    }
+
+    .project-start {
+        height: 280px;
+
+        min-height: 0;
+        max-height: none;
+    }
+
+    .githubBtn {
+        margin-top: 1.25rem !important;
+    }
+
 }
 
 
-@media (max-width : 472px){
-    .commit-container i{
-        display: none;
+@media (max-width: 800px) {
+
+    .background-grid {
+        grid-template-columns: 1fr;
     }
 
-    .commit-start h6{
-        width:60vw;
+    .background-card {
+        min-height: auto;
     }
 
-    .commit-container div{
-        width: auto;
+    .background-section-title {
+        font-size: 36px;
     }
 
 }
 
-@media (max-width : 462px) {
-    .commits-header{
-        display: flex;
-        text-align: start !important;
-        justify-content: start !important;
-        align-items: start !important;
-        flex-direction: column !important;
-        margin-bottom: 1rem !important;
-        gap: 0.7rem;
-    }
-    .commits-header h6{
-        font-size: 24px !important;
+
+@media (max-width: 600px) {
+
+    .section-title {
+        font-size: 40px;
     }
 
-    .acitvity-header{
-        display: flex;
-        text-align: start !important;
-        justify-content: start !important;
-        align-items: start !important;
-        flex-direction: column !important;
-        margin-bottom: 1rem !important;
-        gap: 0.7rem;
+    .project-container {
+        padding: 1rem;
     }
 
-    .acitvity-header h6{
-        font-size: 24px !important;
+    .project-start {
+        height: 220px;
     }
+
+    .project-end {
+        padding: 0;
+    }
+
+    .project-end h4 {
+        font-size: 22px;
+    }
+
+    .project-end h6 {
+        font-size: 14px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .background-card {
+        padding: 1.25rem;
+    }
+
+    .background-card-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .background-content h3 {
+        font-size: 17px;
+    }
+
+    .background-section-title {
+        font-size: 30px;
+    }
+
 }

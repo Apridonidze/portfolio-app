@@ -14,10 +14,51 @@ export default function Experiences({ setActiveSection }){
     },[setActiveSection])
 
    const experiences = [
+    {
+      date: "Sep 2026 - Present",
+      position: "Full-Stack Developer",
+      company_name: "Upwork Freelancing",
+
+      description:
+          "Developed a full-stack B2B lead generation and outreach automation platform that discovers and qualifies local service businesses, enriches contact data, and automates outreach across phone calls, SMS, and email. Built distributed background processing, lead tracking, campaign workflows, and a centralized CRM-style dashboard for managing the complete acquisition pipeline.",
+
+      responsibilities: [
+          "Built an automated business discovery and qualification pipeline using Google Places data, filtering companies by industry, location, ratings, review count, website availability, and configurable lead criteria.",
+
+          "Developed a contact-enrichment system that crawls company websites to discover publicly available phone numbers, email addresses, and business information while automatically deduplicating collected leads.",
+
+          "Designed a distributed background-job architecture using Redis and BullMQ to coordinate business discovery, enrichment, outreach scheduling, messaging, calling, follow-ups, monitoring, and long-running workflows.",
+
+          "Integrated Telnyx Voice and Messaging APIs for programmable outbound calling and SMS, including call states, delivery events, webhooks, retries, and automated follow-up sequences.",
+
+          "Developed a multi-stage outreach engine that progresses leads through call, SMS, email, manual follow-up, interested, accepted, and declined states based on communication outcomes.",
+
+          "Implemented AI-assisted lead qualification and communication workflows for response classification, conversation summarization, personalized outreach, and automated next-action decisions.",
+
+          "Built a CRM-style dashboard for managing discovered companies, contact information, outreach history, lead status, campaign analytics, worker activity, conversion metrics, and data exports.",
+
+          "Implemented fault-tolerant background processing with retries, rate-limit handling, job locking, deduplication, failure tracking, and idempotent processing for reliable automation.",
+      ],
+
+      used_technologies: [
+          "Next.js",
+          "TypeScript",
+          "Node.js",
+          "Express.js",
+          "MongoDB",
+          "Redis",
+          "BullMQ",
+          "Google Places API",
+          "Telnyx",
+          "Docker",
+          "Git",
+          "GitHub",
+      ],
+  },
   {
-    date: "Aug 2026 - Present",
-    position: "Fullstack Developer",
-    company_name: "Upwork Freelancing",
+    date: "Aug 2026 - Aug 2026",
+    position: "Freelance Fullstack Developer",
+    company_name: "Upwork",
     description:
       "Contributed to a B2B sourcing platform that connects companies with manufacturers capable of producing customized products to exact specifications, including products requiring specific OTC actives and supplements.",
     responsibilities: [
@@ -40,7 +81,7 @@ export default function Experiences({ setActiveSection }){
   },
   {
     date: "May 2026 - Present",
-    position: "Full-Stack Developer",
+    position: "Freelance Full-Stack Developer",
     company_name: "Upwork",
     description:
       "Developed and maintained a secure internal web application for a private client, focused on large-scale Instagram data collection, proxy management, and automated scraping infrastructure. Built both frontend and backend systems to support multi-account operations, data visualization, and scalable batch processing.",
@@ -69,7 +110,7 @@ export default function Experiences({ setActiveSection }){
   },
   {
     date: "Jan 2026 - Feb 2026",
-    position: "Backend Developer",
+    position: "FreelanceBackend Developer",
     company_name: "Independent Contractor",
     description:
       "Designed and implemented REST APIs powering production full-stack applications, with a focus on secure authentication, optimized database performance, and maintainable backend architecture.",
@@ -91,7 +132,7 @@ export default function Experiences({ setActiveSection }){
   },
   {
     date: "Jan 2026 - Jan 2026",
-    position: "Frontend Web Developer",
+    position: "Freelance Frontend Web Developer",
     company_name: "Upwork",
     description:
       "Delivered high-quality, responsive websites by transforming client designs into robust front-end solutions. Collaborated closely with clients to capture requirements, refine details, and implement feedback promptly. Ensured optimal performance and seamless user experiences across all devices and browsers, with a focus on clean, maintainable code.",
@@ -112,7 +153,7 @@ export default function Experiences({ setActiveSection }){
   },
   {
     date: "Jul 2023 - Jul 2023",
-    position: "Frontend Web Developer",
+    position: "Freelance Frontend Web Developer",
     company_name: "Upwork",
     description:
       "Executed a short-term project by creating responsive login and sign-up pages for a web application. Utilized HTML, CSS, and JavaScript to enhance user experience with basic form validation. Ensured compatibility across various browsers and devices, based on thorough communication with the client to meet specific needs and provide regular progress updates.",
@@ -127,7 +168,7 @@ export default function Experiences({ setActiveSection }){
 ];
 
     return(
-        <section id="Experience" ref={sectionRef}>
+        <section id="Experience" ref={sectionRef} >
 
             <span className="section-id small">03 / Experience</span>
             <h1 className="section-title ">Where I've Worked</h1>

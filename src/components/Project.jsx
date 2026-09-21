@@ -5,10 +5,14 @@ export default function Project({ project, projectId }){
                 <img src={project.image} alt="project image container" />
             </div>
             <div className="project-end">
-                <h4>{project.title}</h4>
-                <h6>{project.desc}</h6>
-                <div className="row gap-2 my-2 px-2">{project.usedTech.map(tech => <span className="usedTechnology col-auto">{tech}</span> )}</div>
-                <a href={project.githubUrl} target="_blank"><button className="githubBtn btn mt-2 w-100"><i className="fa-brands fa-github"></i> View on GitHub</button></a>
+                <div className="project-col">
+                    <h4>{project.title}</h4>
+                    <h6>{project.desc}</h6>
+                    <div className="row gap-2 my-2 px-2">{project.usedTech.map(tech => <span className="usedTechnology col-auto">{tech}</span> )}</div>
+                </div>
+                <div className="project-col">
+                  <a href={project.githubUrl} target="_blank"><button className="githubBtn btn mt-2 w-100"><i className="fa-brands fa-github"></i> View on GitHub</button></a>
+                </div>
             </div>
         </div>
     );

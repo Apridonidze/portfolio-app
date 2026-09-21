@@ -4,10 +4,8 @@ import ProjectScreenshot1 from '../assets/project-screenshots/Screenshot 2025-11
 import ProjectScreenshot2 from '../assets/project-screenshots/image_original.jpeg'
 import ProjectScreenshot3 from '../assets/project-screenshots/Screenshot 2025-11-26 174331.png'
 import ProjectScreenshot4 from '../assets/project-screenshots/img8.png'
-import ProjectScreenshot5 from '../assets/project-screenshots/Screenshot 2025-12-22 113631.png'
 
 import { useRef,useEffect } from 'react'
-import Activity from '../components/Activity'
 
 export default function Projects({ setActiveSection }){
 
@@ -84,22 +82,10 @@ export default function Projects({ setActiveSection }){
             githubUrl: "https://github.com/Apridonidze/typing-app",
             image: ProjectScreenshot2
         },
-        {
-            title: "QR Code Generator & Scanner",
-            desc: "A modern web application that allows users to generate and scan QR codes with real-time preview, download functionality, and seamless camera integration.",
-            usedTech: [
-                "React",
-                "JavaScript",
-                "Bootstrap",
-                "CSS"
-            ],
-            githubUrl: "https://github.com/Apridonidze/Qr-Code-App",
-            image: ProjectScreenshot5
-        }
     ];
 
     return(
-        <section id="Projects" ref={sectionRef}>
+        <section id="Projects" ref={sectionRef} >
             
             <span className="section-id small">04 / Projects</span>
             <h1 className="section-title ">Things I've built</h1>
@@ -108,7 +94,6 @@ export default function Projects({ setActiveSection }){
                 {projects.map((project, projectId) => <Project project={project} projectId={projectId}/>)}
             </div>
 
-            <div className="section-body row gap-5 my-3"><Activity /></div>
 
         </section>
     );
