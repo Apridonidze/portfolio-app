@@ -265,6 +265,10 @@
         padding: 0 !important;
     }
 
+    .resume{
+        margin-top: 2rem;
+    }
+
     .sidebar-container {
         position: relative;
         top: auto;
