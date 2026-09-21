@@ -191,7 +191,8 @@
     margin: 0;
 }
 
-.socials a {
+.socials a,
+.socials .email-copy {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -207,12 +208,74 @@
         transform 180ms ease;
 }
 
-.socials a:hover {
+.socials a:hover,
+.socials .email-copy:hover {
     color: var(--text-primary);
 }
 
 .socials a:hover i {
     transform: translateY(-2px);
+}
+
+.email-copy {
+    position: relative;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    font: inherit;
+}
+
+.email-copy:focus-visible {
+    outline: 2px solid var(--text-muted);
+    outline-offset: 5px;
+    border-radius: 2px;
+}
+
+.socials .email-copy.is-copied {
+    color: var(--text-primary);
+}
+
+.email-copy.is-copied i {
+    animation: email-copy-pop 300ms ease-out;
+}
+
+.email-copy-feedback {
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 50%;
+    transform: translate(-50%, 5px);
+    padding: 7px 10px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    background: var(--bg-card);
+    color: var(--text-primary);
+    font-size: 12px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.email-copy-feedback.is-visible {
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+@keyframes email-copy-pop {
+    0% { transform: scale(0.6); }
+    65% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .email-copy.is-copied i {
+        animation: none;
+    }
+
+    .email-copy-feedback {
+        transition: none;
+    }
 }
 
 .theme-toggle {
