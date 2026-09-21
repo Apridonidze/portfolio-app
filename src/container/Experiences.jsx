@@ -16,8 +16,8 @@ export default function Experiences({ setActiveSection }){
    const experiences = [
     {
       date: "Sep 2026 - Present",
-      position: "Full-Stack Developer",
-      company_name: "Upwork Freelancing",
+      position: "Freelance Full-Stack Developer",
+      company_name: "Upwork",
 
       description:
           "Developed a full-stack B2B lead generation and outreach automation platform that discovers and qualifies local service businesses, enriches contact data, and automates outreach across phone calls, SMS, and email. Built distributed background processing, lead tracking, campaign workflows, and a centralized CRM-style dashboard for managing the complete acquisition pipeline.",
