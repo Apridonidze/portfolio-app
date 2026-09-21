@@ -265,6 +265,10 @@
         padding: 0 !important;
     }
 
+    .sidebar-bottom{
+        margin-bottom: 0px !important;
+    }
+
     .resume{
         margin-top: 2rem;
     }

@@ -27,10 +27,6 @@
 }
 
 
-/* =========================
-   SKILLS
-========================= */
-
 .skills-container {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -86,11 +82,6 @@
     flex-shrink: 0;
 }
 
-
-/* =========================
-   EXPERIENCE
-========================= */
-
 .experience-container {
     display: flex;
     flex-direction: column;
@@ -118,9 +109,25 @@
     border-color: var(--border-strong);
 }
 
-.smallText {
-    color: var(--text-muted);
+.experience-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+}
+
+.experience-top h4 {
+    margin: 0;
+}
+
+.experience-top .smallText {
+    flex-shrink: 0;
     font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--text-secondary);
+    opacity: 0.65;
+    white-space: nowrap;
 }
 
 .position {
@@ -188,14 +195,6 @@
     border-radius: 5px;
 }
 
-.usedTechnologyIcon {
-    width: 14px;
-    height: 14px;
-
-    flex-shrink: 0;
-
-    color: var(--text-muted);
-}
 
 
 /* Experience Timeline */
@@ -250,11 +249,6 @@
 
     z-index: 2;
 }
-
-
-/* =========================
-   PROJECTS
-========================= */
 
 .project-container {
     display: grid;
@@ -580,14 +574,16 @@
     font-size: 11px;
 }
 
+@media (max-width: 1000px) {
+    .skills-container{
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (max-width: 856px) {
 
     #Projects {
         width: 100%;
-    }
-
-    .skills-container {
-        grid-template-columns: 1fr;
     }
 
     .project-container {
@@ -653,6 +649,11 @@
         font-size: 14px;
     }
 
+    .experience-top{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
 }
 
 
@@ -672,6 +673,15 @@
 
     .background-section-title {
         font-size: 30px;
+    }
+
+    .main-container{
+        padding: 1.5rem;
+    }
+
+    .main-content{
+        padding: 0;
+        gap: 4rem;
     }
 
 }
