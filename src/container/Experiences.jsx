@@ -14,60 +14,67 @@ export default function Experiences({ setActiveSection }){
     },[setActiveSection])
 
    const experiences = [
-    {
-      date: "Sep 2026 - Present",
-      position: "Freelance Full-Stack Developer",
-      company_name: "Upwork",
+  {
+    date: "Sep 2026 - Present",
+    position: "Full-Stack Developer",
+    company_name: "Lead Generation & Outreach Platform · Upwork Client",
 
-      description:
-          "Developed a full-stack B2B lead generation and outreach automation platform that discovers and qualifies local service businesses, enriches contact data, and automates outreach across phone calls, SMS, and email. Built distributed background processing, lead tracking, campaign workflows, and a centralized CRM-style dashboard for managing the complete acquisition pipeline.",
+    description:
+      "Developing a B2B lead acquisition platform that automates the journey from discovering local businesses to enriching contacts, running multi-channel outreach, and tracking qualified opportunities through a centralized workflow.",
 
-      responsibilities: [
-          "Built an automated business discovery and qualification pipeline using Google Places data, filtering companies by industry, location, ratings, review count, website availability, and configurable lead criteria.",
+    responsibilities: [
+      "Built a configurable business discovery pipeline using Google Places data to identify and qualify companies by industry, location, ratings, reviews, website availability, and custom lead criteria.",
 
-          "Developed a contact-enrichment system that crawls company websites to discover publicly available phone numbers, email addresses, and business information while automatically deduplicating collected leads.",
+      "Created a contact-enrichment workflow that crawls company websites for publicly available phone numbers, email addresses, and business information while preventing duplicate records.",
 
-          "Designed a distributed background-job architecture using Redis and BullMQ to coordinate business discovery, enrichment, outreach scheduling, messaging, calling, follow-ups, monitoring, and long-running workflows.",
+      "Architected distributed background processing with Redis and BullMQ to coordinate discovery, enrichment, outreach, follow-ups, and other long-running workloads.",
 
-          "Integrated Telnyx Voice and Messaging APIs for programmable outbound calling and SMS, including call states, delivery events, webhooks, retries, and automated follow-up sequences.",
+      "Integrated Telnyx Voice and Messaging APIs for outbound calls and SMS, handling webhooks, delivery events, call states, retries, and follow-up sequences.",
 
-          "Developed a multi-stage outreach engine that progresses leads through call, SMS, email, manual follow-up, interested, accepted, and declined states based on communication outcomes.",
+      "Designed a state-driven outreach workflow that moves leads between calling, messaging, follow-up, interested, accepted, and declined stages according to communication outcomes.",
 
-          "Implemented AI-assisted lead qualification and communication workflows for response classification, conversation summarization, personalized outreach, and automated next-action decisions.",
+      "Added AI-assisted workflows for classifying responses, summarizing conversations, personalizing communication, and determining appropriate next actions.",
 
-          "Built a CRM-style dashboard for managing discovered companies, contact information, outreach history, lead status, campaign analytics, worker activity, conversion metrics, and data exports.",
+      "Developed a CRM-style interface for reviewing companies, contact details, communication history, pipeline status, campaign performance, worker activity, and exports.",
 
-          "Implemented fault-tolerant background processing with retries, rate-limit handling, job locking, deduplication, failure tracking, and idempotent processing for reliable automation.",
-      ],
+      "Improved processing reliability through job locking, idempotency, deduplication, retry strategies, rate-limit handling, and failure tracking.",
+    ],
 
-      used_technologies: [
-          "Next.js",
-          "TypeScript",
-          "Node.js",
-          "Express.js",
-          "MongoDB",
-          "Redis",
-          "BullMQ",
-          "Google Places API",
-          "Telnyx",
-          "Docker",
-          "Git",
-          "GitHub",
-      ],
+    used_technologies: [
+      "Next.js",
+      "TypeScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Redis",
+      "BullMQ",
+      "Google Places API",
+      "Telnyx",
+      "Docker",
+      "Git",
+      "GitHub",
+    ],
   },
   {
     date: "Aug 2026 - Aug 2026",
-    position: "Freelance Fullstack Developer",
-    company_name: "Upwork",
+    position: "Backend Developer",
+    company_name: "B2B Manufacturer Sourcing Platform · Upwork Client",
+
     description:
-      "Contributed to a B2B sourcing platform that connects companies with manufacturers capable of producing customized products to exact specifications, including products requiring specific OTC actives and supplements.",
+      "Worked on the backend of a specialized sourcing platform that evaluates manufacturer capabilities against detailed buyer requirements, including custom formulations, OTC actives, supplements, and product specifications.",
+
     responsibilities: [
-      "Built a distributed manufacturer-scraping system using Redis and BullMQ to orchestrate and distribute concurrent scraping jobs at scale.",
-      "Parsed and enriched scraped manufacturer data, using Groq to normalize inconsistent supplier and product data into structured, standardized records.",
-      "Designed an event-driven matching engine powered by Redis and BullMQ that automatically triggers when new buyer requirements or manufacturer data become available.",
-      "Implemented hybrid hard- and soft-matching logic across product specifications and manufacturer capabilities to score and rank candidates.",
-      "Returned ranked manufacturer matches with confidence scores, connecting buyers with qualified suppliers for their specific requirements.",
+      "Engineered a distributed manufacturer data-collection pipeline with Redis and BullMQ to process concurrent scraping workloads across background workers.",
+
+      "Used Groq to transform inconsistent supplier and product information into normalized records suitable for automated comparison and search.",
+
+      "Created an event-driven matching workflow that reacts to new manufacturer data and buyer requirements without relying on manual processing.",
+
+      "Developed hard-constraint and weighted soft-matching logic to compare product requirements against manufacturer capabilities.",
+
+      "Generated ranked supplier candidates with confidence scores, giving buyers a structured shortlist of manufacturers matching their requirements.",
     ],
+
     used_technologies: [
       "Node.js",
       "Express.js",
@@ -81,18 +88,26 @@ export default function Experiences({ setActiveSection }){
   },
   {
     date: "May 2026 - Present",
-    position: "Freelance Full-Stack Developer",
-    company_name: "Upwork",
+    position: "Full-Stack Developer",
+    company_name: "Data Collection & Automation System · Private Client",
+
     description:
-      "Developed and maintained a secure internal web application for a private client, focused on large-scale Instagram data collection, proxy management, and automated scraping infrastructure. Built both frontend and backend systems to support multi-account operations, data visualization, and scalable batch processing.",
+      "Building and maintaining a private operations platform for large-scale Instagram data collection, combining account management, proxy infrastructure, automated scraping, batch processing, and internal data-analysis tools.",
+
     responsibilities: [
-      "Built a secure internal web application with JWT-based authentication and role-based access control.",
-      "Developed a multi-account Instagram proxy management system, allowing users to assign dedicated proxies to accounts for isolated operation.",
-      "Engineered an automated batch scraping engine using Instagrapi that distributes scraping jobs across multiple accounts while minimizing rate limits and bans.",
-      "Built an automatic proxy IP rotation system integrated into the autoscraping workflow to maintain anonymity and reduce account blocks.",
-      "Designed and maintained a MySQL database storing thousands of scraped Instagram profiles, including follower counts, engagement metrics, biographies, and contact information.",
-      "Developed interactive Next dashboards and dynamic HTML tables for filtering, sorting, and reviewing scraped leads.",
+      "Implemented authentication and role-based authorization to protect administrative tools, account operations, and collected data.",
+
+      "Developed an account and proxy management layer that associates Instagram accounts with dedicated proxies and operational configuration.",
+
+      "Engineered a multi-account scraping system with Instagrapi that distributes queued workloads while accounting for account availability, failures, and platform rate limits.",
+
+      "Integrated automatic proxy rotation and fallback behavior into scraping workflows to improve continuity when individual proxy endpoints fail.",
+
+      "Designed persistence models for large collections of Instagram profile data, including engagement statistics, biographies, follower metrics, and available contact information.",
+
+      "Built internal Next.js interfaces for searching, filtering, sorting, reviewing, and managing collected datasets and scraper operations.",
     ],
+
     used_technologies: [
       "Next.js",
       "Python",
@@ -110,17 +125,24 @@ export default function Experiences({ setActiveSection }){
   },
   {
     date: "Jan 2026 - Feb 2026",
-    position: "FreelanceBackend Developer",
-    company_name: "Independent Contractor",
+    position: "Backend Developer",
+    company_name: "Web Application Backend · Independent Client",
+
     description:
-      "Designed and implemented REST APIs powering production full-stack applications, with a focus on secure authentication, optimized database performance, and maintainable backend architecture.",
+      "Developed the server-side foundation for a web application, focusing on API design, relational data modeling, authentication, and maintainable application architecture.",
+
     responsibilities: [
-      "Designed and implemented REST APIs powering production full-stack applications.",
-      "Optimized relational database schemas, improving query performance and maintainability.",
-      "Implemented secure JWT authentication and environment-based configuration management.",
-      "Refactored backend architecture, reducing runtime errors and improving long-term maintainability.",
-      "Collaborated on production deployments and backend feature delivery.",
+      "Implemented REST endpoints for core application features and frontend integration.",
+
+      "Designed and refined relational database schemas to keep application data structured and queries efficient.",
+
+      "Secured protected application functionality with JWT-based authentication and environment-specific configuration.",
+
+      "Reorganized backend modules to improve separation of concerns, error handling, and long-term maintainability.",
+
+      "Supported deployment and integration work as backend features moved into the production application.",
     ],
+
     used_technologies: [
       "Node.js",
       "Express.js",
@@ -132,16 +154,22 @@ export default function Experiences({ setActiveSection }){
   },
   {
     date: "Jan 2026 - Jan 2026",
-    position: "Freelance Frontend Web Developer",
-    company_name: "Upwork",
+    position: "Frontend Developer",
+    company_name: "Responsive Website Implementation · Upwork Client",
+
     description:
-      "Delivered high-quality, responsive websites by transforming client designs into robust front-end solutions. Collaborated closely with clients to capture requirements, refine details, and implement feedback promptly. Ensured optimal performance and seamless user experiences across all devices and browsers, with a focus on clean, maintainable code.",
+      "Translated client-provided designs into responsive web pages with close attention to layout accuracy, usability, browser compatibility, and consistent behavior across screen sizes.",
+
     responsibilities: [
-      "Converted client design mockups into fully functional, responsive web pages.",
-      "Optimized website performance and ensured compatibility across devices and browsers.",
-      "Collaborated with clients to refine project requirements and implemented revisions effectively.",
-      "Maintained clean, modular, and reusable code for scalable web applications.",
+      "Recreated supplied designs as responsive pages using reusable HTML, CSS, Bootstrap, and JavaScript components.",
+
+      "Adjusted layouts, spacing, typography, and responsive behavior to preserve the intended design across desktop and mobile devices.",
+
+      "Tested and resolved browser-specific and device-specific presentation issues before delivery.",
+
+      "Worked directly from client feedback to refine visual details and deliver requested revisions.",
     ],
+
     used_technologies: [
       "HTML5",
       "CSS3",
@@ -153,16 +181,22 @@ export default function Experiences({ setActiveSection }){
   },
   {
     date: "Jul 2023 - Jul 2023",
-    position: "Freelance Frontend Web Developer",
-    company_name: "Upwork",
+    position: "Frontend Developer",
+    company_name: "Authentication UI · Upwork Client",
+
     description:
-      "Executed a short-term project by creating responsive login and sign-up pages for a web application. Utilized HTML, CSS, and JavaScript to enhance user experience with basic form validation. Ensured compatibility across various browsers and devices, based on thorough communication with the client to meet specific needs and provide regular progress updates.",
+      "Created the login and registration interface for a web application as a focused frontend engagement, delivering responsive forms with client-side validation and cross-device support.",
+
     responsibilities: [
-      "Developed responsive login and sign-up pages with emphasis on user-friendly interfaces.",
-      "Incorporated form validation techniques to enhance user data integrity.",
-      "Conducted cross-browser testing to ensure consistent page performance.",
-      "Communicated effectively with clients to understand requirements and provide timely updates.",
+      "Implemented responsive login and registration screens from the client's requirements.",
+
+      "Added client-side form validation and clear input feedback for common authentication fields.",
+
+      "Verified layouts and interactions across different browsers, screen sizes, and devices.",
+
+      "Iterated on the interface based on client feedback and delivered the completed authentication pages.",
     ],
+
     used_technologies: ["HTML5", "CSS3", "JavaScript", "Git", "GitHub"],
   },
 ];
@@ -170,7 +204,7 @@ export default function Experiences({ setActiveSection }){
     return(
         <section id="Experience" ref={sectionRef} >
 
-            <span className="section-id small">03 / Experience</span>
+            <span className="section-id small">03 / Freelancing</span>
             <h1 className="section-title ">Where I've Worked</h1>
 
             <div className="section-body">

@@ -19,7 +19,7 @@ export default function Sidebar({ activeSection }){
                 <ul className='sectionContainer'>
                     <li  onClick={() => document.getElementById('About').scrollIntoView()} className={`section ${activeSection === "About" ? 'active' : ''}`}>About</li>
                     <li onClick={() => document.getElementById('Skills').scrollIntoView()} className={`section ${activeSection === "Skills" ? 'active' : ''}`}>Skills</li>
-                    <li onClick={() => document.getElementById('Experience').scrollIntoView()} className={`section ${activeSection === "Experience" ? 'active' : ''}`}>Experience</li>
+                    <li onClick={() => document.getElementById('Experience').scrollIntoView()} className={`section ${activeSection === "Experience" ? 'active' : ''}`}>Freelancing</li>
                     <li onClick={() => document.getElementById('Background').scrollIntoView()} className={`section ${activeSection === "Background" ? 'active' : ''}`}>Background</li>
                     <li onClick={() => document.getElementById('Projects').scrollIntoView()} className={`section ${activeSection === "Projects" ? 'active' : ''}`}>Projects</li>
                 </ul>
